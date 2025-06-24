@@ -16,7 +16,7 @@ const Hero = () => {
 
       <div className="relative z-10 text-center text-white px-4">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent">
-          Liquid Art
+          Resin art
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-gray-200">
           Where creativity flows freely through resin, creating mesmerizing pieces that capture light and imagination
