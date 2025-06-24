@@ -9,42 +9,42 @@ const Gallery = () => {
       title: "Ocean Waves",
       description: "Deep blue resin with white waves",
       image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop",
-      price: "$125"
+      price: "₹125"
     },
     {
       id: 2,
       title: "Golden Sunset",
       description: "Warm golden and orange tones",
       image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=400&fit=crop",
-      price: "$150"
+      price: "₹150"
     },
     {
       id: 3,
       title: "Purple Dreams",
       description: "Ethereal purple and silver swirls",
       image: "https://images.unsplash.com/photo-1578662015358-4c8d6e2a2c0a?w=400&h=400&fit=crop",
-      price: "$110"
+      price: "₹110"
     },
     {
       id: 4,
       title: "Forest Mist",
       description: "Green and white organic patterns",
       image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop",
-      price: "$130"
+      price: "₹130"
     },
     {
       id: 5,
       title: "Cosmic Flow",
       description: "Deep space blues with metallic accents",
       image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=400&fit=crop",
-      price: "$175"
+      price: "₹175"
     },
     {
       id: 6,
       title: "Rose Garden",
       description: "Pink and rose gold marble effect",
       image: "https://images.unsplash.com/photo-1578662015358-4c8d6e2a2c0a?w=400&h=400&fit=crop",
-      price: "$140"
+      price: "₹140"
     }
   ];
 
