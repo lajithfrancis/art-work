@@ -31,7 +31,7 @@ const Hero = () => {
           <Button 
             variant="outline" 
             size="lg"
-            className="border-white text-white hover:bg-white hover:text-purple-900 px-8 py-3 rounded-full transition-all duration-300"
+            className="border-white text-blue-400 hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-600 hover:text-white hover:border-transparent px-8 py-3 rounded-full transition-all duration-300"
           >
             <a href="#contact">Get in Touch</a>
           </Button>
