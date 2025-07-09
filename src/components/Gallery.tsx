@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const Gallery = () => {
   const artworks = [
@@ -60,7 +61,8 @@ const Gallery = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Desktop Grid View */}
+        <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-8">
           {artworks.map((artwork) => (
             <Card key={artwork.id} className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <CardContent className="p-0">
@@ -85,6 +87,48 @@ const Gallery = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Mobile Carousel View */}
+        <div className="md:hidden">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {artworks.map((artwork) => (
+                <CarouselItem key={artwork.id} className="pl-2 md:pl-4 basis-[85%] sm:basis-[70%]">
+                  <Card className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <CardContent className="p-0">
+                      <div className="relative overflow-hidden rounded-t-lg">
+                        <img
+                          src={artwork.image}
+                          alt={artwork.title}
+                          className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      </div>
+                      <div className="p-4">
+                        <h3 className="text-lg font-semibold mb-2 text-gray-800">{artwork.title}</h3>
+                        <p className="text-gray-600 mb-3 text-sm">{artwork.description}</p>
+                        <div className="flex items-center justify-between">
+                          <span className="text-xl font-bold text-purple-600">{artwork.price}</span>
+                          <Button size="sm" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-3 py-1 rounded-full text-sm">
+                            Inquire
+                          </Button>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-2" />
+            <CarouselNext className="right-2" />
+          </Carousel>
         </div>
       </div>
     </section>
