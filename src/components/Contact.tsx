@@ -100,10 +100,10 @@ const Contact = () => {
                 <Button
                   onClick={handleWhatsAppClick}
                   size="lg"
-                  className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center space-x-3 mx-auto"
+                  className="bg-green-500 hover:bg-green-600 text-white shadow-lg hover:shadow-xl px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center space-x-3 mx-auto border-2 border-green-400 hover:border-green-300"
                 >
-                  <MessageCircle className="w-6 h-6" />
-                  <span className="text-lg">Chat on WhatsApp</span>
+                  <MessageCircle className="w-6 h-6 text-white" />
+                  <span className="text-lg font-semibold text-white">Chat on WhatsApp</span>
                 </Button>
               </div>
 
