@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const Gallery = () => {
   const artworks = [
@@ -60,7 +61,44 @@ const Gallery = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Mobile Carousel View */}
+        <div className="md:hidden">
+          <Carousel className="w-full" opts={{ align: "start", loop: true }}>
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {artworks.map((artwork) => (
+                <CarouselItem key={artwork.id} className="pl-2 md:pl-4 basis-4/5 sm:basis-3/5">
+                  <Card className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <CardContent className="p-0">
+                      <div className="relative overflow-hidden rounded-t-lg">
+                        <img
+                          src={artwork.image}
+                          alt={artwork.title}
+                          className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      </div>
+                      <div className="p-6">
+                        <h3 className="text-xl font-semibold mb-2 text-gray-800">{artwork.title}</h3>
+                        <p className="text-gray-600 mb-3">{artwork.description}</p>
+                        <div className="flex items-center justify-between">
+                          <span className="text-2xl font-bold text-purple-600">{artwork.price}</span>
+                          <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-4 py-2 rounded-full">
+                            Inquire
+                          </Button>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-2" />
+            <CarouselNext className="right-2" />
+          </Carousel>
+        </div>
+
+        {/* Desktop Grid View */}
+        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {artworks.map((artwork) => (
             <Card key={artwork.id} className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <CardContent className="p-0">
