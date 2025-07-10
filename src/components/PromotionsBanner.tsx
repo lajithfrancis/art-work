@@ -2,7 +2,7 @@ import React from 'react';
 
 const PromotionsBanner = () => {
   return (
-    <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-3 overflow-hidden relative z-50">
+    <div className="fixed top-0 w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-3 overflow-hidden z-[60]">
       <div className="animate-scroll whitespace-nowrap text-center">
         <span className="inline-block mx-8 text-sm font-medium">
           🎨 Limited Time: 20% Off Custom Resin Art Pieces
