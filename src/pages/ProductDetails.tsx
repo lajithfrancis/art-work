@@ -76,35 +76,35 @@ const ProductDetails: React.FC = () => {
   }
 
   return (
-    <div className='min-h-screen pt-32 pb-20 bg-gray-50'>
-      <div className='container mx-auto px-4'>
-        <div className='mb-8'>
+    <div className='min-h-screen pt-4 pb-8 bg-gray-50'>
+      <div className='container mx-auto px-2'>
+        <div className='mb-4'>
           <Button
             variant='outline'
-            className='mb-6'
+            className='mb-4'
             onClick={() => {
-              navigate(-1); // This goes back in history, just like the browser back button
+              navigate(-1);
             }}
           >
             <span className='flex items-center gap-2'>
               <ArrowLeft className='h-4 w-4' />
-              Back to Products
+              Back to Main
             </span>
           </Button>
         </div>
 
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto'>
           {/* Product Image */}
           <div className='relative'>
             <img
               src={product.image}
               alt={product.title}
-              className='w-full h-96 lg:h-[500px] object-cover rounded-lg shadow-lg'
+              className='w-full h-80 lg:h-[350px] object-cover rounded-lg shadow-lg'
             />
           </div>
 
           {/* Product Details */}
-          <div className='space-y-6'>
+          <div className='space-y-4'>
             <div>
               <h1 className='text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent'>
                 {product.title}
@@ -149,7 +149,7 @@ const ProductDetails: React.FC = () => {
                 className='w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white py-3'
                 disabled={!selectedSize}
               >
-                {selectedSize ? 'Add to Cart' : 'Select a Size'}
+                {selectedSize ? 'Enquire' : 'Select a Size'}
               </Button>
               <Button
                 variant='outline'

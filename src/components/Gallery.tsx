@@ -70,16 +70,16 @@ const Gallery = () => {
             {products.map((product) => (
               <Card
                 key={product.id}
-                className='group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex-shrink-0 w-72'
+                className='group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex-shrink-0 w-72 rounded-3xl'
               >
                 <CardContent className='p-0'>
-                  <div className='relative overflow-hidden rounded-t-lg'>
+                  <div className='relative overflow-hidden rounded-t-3xl'>
                     <img
                       src={product.image}
                       alt={product.title}
-                      className='w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500'
+                      className='w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 rounded-t-3xl'
                     />
-                    <div className='absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
+                    <div className='absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-3xl'></div>
                   </div>
                   <div className='p-6'>
                     <h3 className='text-xl font-semibold mb-2 text-gray-800'>
@@ -112,16 +112,16 @@ const Gallery = () => {
           {products.map((product) => (
             <Card
               key={product.id}
-              className='group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2'
+              className='group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 rounded-3xl'
             >
               <CardContent className='p-0'>
-                <div className='relative overflow-hidden rounded-t-lg'>
+                <div className='relative overflow-hidden rounded-t-3xl'>
                   <img
                     src={product.image}
                     alt={product.title}
-                    className='w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500'
+                    className='w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 rounded-t-3xl'
                   />
-                  <div className='absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
+                  <div className='absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-3xl'></div>
                 </div>
                 <div className='p-6'>
                   <h3 className='text-xl font-semibold mb-2 text-gray-800'>
