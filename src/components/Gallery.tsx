@@ -47,7 +47,38 @@ const Gallery = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
+        {/* Mobile Horizontal Scroll */}
+        <div className="md:hidden overflow-x-auto pb-4">
+          <div className="flex space-x-6 px-4">
+            {categories.map((category) => (
+              <Card key={category.id} className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex-shrink-0 w-72">
+                <CardContent className="p-0">
+                  <div className="relative overflow-hidden rounded-t-lg">
+                    <img
+                      src={category.image}
+                      alt={category.title}
+                      className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold mb-2 text-gray-800">{category.title}</h3>
+                    <p className="text-gray-600 mb-3">{category.description}</p>
+                    <p className="text-sm text-gray-500 mb-4">{category.itemCount} items</p>
+                    <Button asChild className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">
+                      <Link to={`/category/${category.id}`}>
+                        View Collection
+                      </Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Desktop Grid View */}
+        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
           {categories.map((category) => (
             <Card key={category.id} className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <CardContent className="p-0">
