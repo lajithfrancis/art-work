@@ -64,12 +64,12 @@ const Gallery = () => {
           </p>
         </div>
 
-        {/* Mobile Horizontal Scroll */}
-        <div className='md:hidden overflow-x-auto pb-4'>
-          <div className='flex space-x-6 px-4'>
-            {products.map((product) => (
-              <Card
-                key={product.id}
+        {/* Mobile Infinite Scroll */}
+        <div className='md:hidden overflow-hidden pb-4'>
+          <div className='flex space-x-6 px-4 animate-[scroll_20s_linear_infinite]'>
+            {[...products, ...products].map((product, index) => (
+               <Card
+                key={`${product.id}-${index}`}
                 className='group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex-shrink-0 w-72 rounded-3xl'
               >
                 <CardContent className='p-0'>
