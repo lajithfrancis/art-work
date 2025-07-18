@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link, useLocation } from 'react-router-dom';
@@ -6,6 +6,7 @@ import { Link, useLocation } from 'react-router-dom';
 const Gallery = () => {
   const location = useLocation();
   const scrollRef = useRef<HTMLDivElement>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     if (location.state?.scrollY !== undefined) {
@@ -34,6 +35,12 @@ const Gallery = () => {
     const itemWidth = cardWidth + gap;
     const totalItems = 4;
     const sectionWidth = itemWidth * totalItems;
+    
+    // Calculate current active index (considering we're starting from middle section)
+    const adjustedScrollLeft = scrollLeft - sectionWidth;
+    const currentIndex = Math.round(adjustedScrollLeft / itemWidth);
+    const normalizedIndex = ((currentIndex % totalItems) + totalItems) % totalItems;
+    setActiveIndex(normalizedIndex);
     
     // If scrolled past the second section, reset to middle section
     if (scrollLeft >= sectionWidth * 2) {
@@ -142,6 +149,18 @@ const Gallery = () => {
               </Card>
             ))}
           </div>
+        </div>
+
+        {/* Mobile Dots Indicator */}
+        <div className='md:hidden flex justify-center space-x-2 mt-4'>
+          {products.map((_, index) => (
+            <div
+              key={index}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                activeIndex === index ? 'bg-purple-600 w-8' : 'bg-gray-300'
+              }`}
+            />
+          ))}
         </div>
 
         {/* Desktop Grid View */}
