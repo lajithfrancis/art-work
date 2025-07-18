@@ -1,16 +1,49 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link, useLocation } from 'react-router-dom';
 
 const Gallery = () => {
   const location = useLocation();
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (location.state?.scrollY !== undefined) {
       window.scrollTo(0, location.state.scrollY);
     }
   }, [location.state?.scrollY]);
+
+  useEffect(() => {
+    // Set initial scroll position to start from middle section for seamless infinite scroll
+    if (scrollRef.current) {
+      const cardWidth = 288; // w-72 = 18rem = 288px
+      const gap = 24; // space-x-6 = 1.5rem = 24px
+      const itemWidth = cardWidth + gap;
+      const totalItems = 4;
+      const sectionWidth = itemWidth * totalItems;
+      scrollRef.current.scrollLeft = sectionWidth;
+    }
+  }, []);
+
+  const handleScroll = () => {
+    if (!scrollRef.current) return;
+    
+    const { scrollLeft } = scrollRef.current;
+    const cardWidth = 288; // w-72 = 18rem = 288px
+    const gap = 24; // space-x-6 = 1.5rem = 24px
+    const itemWidth = cardWidth + gap;
+    const totalItems = 4;
+    const sectionWidth = itemWidth * totalItems;
+    
+    // If scrolled past the second section, reset to middle section
+    if (scrollLeft >= sectionWidth * 2) {
+      scrollRef.current.scrollLeft = sectionWidth;
+    }
+    // If scrolled before the first section, jump to middle section
+    else if (scrollLeft <= 0) {
+      scrollRef.current.scrollLeft = sectionWidth;
+    }
+  };
 
   const products = [
     {
@@ -65,7 +98,11 @@ const Gallery = () => {
         </div>
 
         {/* Mobile Infinite Scroll */}
-        <div className='md:hidden overflow-x-auto pb-4 scrollbar-hide'>
+        <div 
+          ref={scrollRef}
+          className='md:hidden overflow-x-auto pb-4 scrollbar-hide' 
+          onScroll={handleScroll}
+        >
           <div className='flex space-x-6 px-4'>
             {[...products, ...products, ...products].map((product, index) => (
                <Card
