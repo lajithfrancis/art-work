@@ -92,15 +92,15 @@ const Gallery = () => {
   ];
 
   return (
-    <section id='gallery' className='py-20 bg-gray-50'>
+    <section id='gallery' className='py-20 bg-secondary/30'>
       <div className='container mx-auto px-4'>
         <div className='text-center mb-16'>
-          <h2 className='text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent'>
-            Our Products
+          <h2 className='text-4xl md:text-5xl font-serif font-bold mb-4 elegant-text'>
+            Fresh from the Studio
           </h2>
-          <p className='text-xl text-gray-600 max-w-2xl mx-auto'>
-            Discover our handcrafted resin art pieces, available in multiple
-            sizes and custom options
+          <p className='text-lg text-muted-foreground max-w-3xl mx-auto font-sans'>
+            The latest pieces to emerge from our studio, inspired by the ever-changing beauty of nature. 
+            Discover new designs, seasonal botanicals, and the most recent one-of-a-kind art waiting to find a home.
           </p>
         </div>
 
@@ -126,19 +126,19 @@ const Gallery = () => {
                     <div className='absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-3xl'></div>
                   </div>
                   <div className='p-6'>
-                    <h3 className='text-xl font-semibold mb-2 text-gray-800'>
+                    <h3 className='text-xl font-serif font-semibold mb-2 text-foreground'>
                       {product.title}
                     </h3>
-                    <p className='text-gray-600 mb-2'>{product.description}</p>
-                    <p className='text-sm text-gray-500 mb-1'>
+                    <p className='text-muted-foreground mb-2 font-sans'>{product.description}</p>
+                    <p className='text-sm text-muted-foreground mb-1 font-sans'>
                       {product.defaultSize}
                     </p>
-                    <p className='text-lg font-semibold text-purple-600 mb-4'>
+                    <p className='text-lg font-semibold text-elegant mb-4 font-sans'>
                       Starting at {product.startingPrice}
                     </p>
                     <Button
                       asChild
-                      className='w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white'
+                      className='w-full nature-gradient hover:opacity-90 text-primary-foreground font-sans sophisticated-shadow'
                     >
                       <Link to={`/product/${product.id}`}>
                         View Sizes & Prices
@@ -157,7 +157,7 @@ const Gallery = () => {
             <div
               key={index}
               className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                activeIndex === index ? 'bg-purple-600 w-8' : 'bg-gray-300'
+                activeIndex === index ? 'bg-primary w-8' : 'bg-muted'
               }`}
             />
           ))}
@@ -180,19 +180,19 @@ const Gallery = () => {
                   <div className='absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-3xl'></div>
                 </div>
                 <div className='p-6'>
-                  <h3 className='text-xl font-semibold mb-2 text-gray-800'>
+                  <h3 className='text-xl font-serif font-semibold mb-2 text-foreground'>
                     {product.title}
                   </h3>
-                  <p className='text-gray-600 mb-2'>{product.description}</p>
-                  <p className='text-sm text-gray-500 mb-1'>
+                  <p className='text-muted-foreground mb-2 font-sans'>{product.description}</p>
+                  <p className='text-sm text-muted-foreground mb-1 font-sans'>
                     {product.defaultSize}
                   </p>
-                  <p className='text-lg font-semibold text-purple-600 mb-4'>
+                  <p className='text-lg font-semibold text-elegant mb-4 font-sans'>
                     Starting at {product.startingPrice}
                   </p>
                   <Button
                     asChild
-                    className='w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white'
+                    className='w-full nature-gradient hover:opacity-90 text-primary-foreground font-sans sophisticated-shadow'
                   >
                     <Link to={`/product/${product.id}`}>
                       View Sizes & Prices

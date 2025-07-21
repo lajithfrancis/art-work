@@ -14,17 +14,17 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900">
+    <section id="contact" className="py-20 bg-gradient-to-br from-primary via-elegant to-primary">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-              Get in Touch
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-primary-foreground">
+              Let's Create Together
             </h2>
-            <p className="text-xl text-gray-200 max-w-2xl mx-auto">
-              Ready to commission a custom piece or have questions about my artwork? Let's connect!
+            <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto font-sans">
+              Ready to preserve your special moments in art? Let's discuss your custom nature-inspired piece.
             </p>
-            <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-blue-400 mx-auto mt-8"></div>
+            <div className="w-24 h-1 bg-primary-foreground/50 mx-auto mt-8"></div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -36,9 +36,9 @@ const Contact = () => {
                     <div className="bg-green-500 p-3 rounded-full">
                       <MessageCircle className="w-6 h-6 text-white" />
                     </div>
-                    <div className="text-white">
-                      <h3 className="font-semibold">WhatsApp</h3>
-                      <p className="text-gray-200">Quick and easy communication</p>
+                    <div className="text-primary-foreground">
+                      <h3 className="font-semibold font-serif">WhatsApp</h3>
+                      <p className="text-primary-foreground/80 font-sans">Quick and easy communication</p>
                     </div>
                   </div>
                 </CardContent>
@@ -50,9 +50,9 @@ const Contact = () => {
                     <div className="bg-blue-500 p-3 rounded-full">
                       <Mail className="w-6 h-6 text-white" />
                     </div>
-                    <div className="text-white">
-                      <h3 className="font-semibold">Email</h3>
-                      <p className="text-gray-200">info@artflowresin.com</p>
+                    <div className="text-primary-foreground">
+                      <h3 className="font-semibold font-serif">Email</h3>
+                      <p className="text-primary-foreground/80 font-sans">info@wingedauraresin.com</p>
                     </div>
                   </div>
                 </CardContent>
@@ -64,9 +64,9 @@ const Contact = () => {
                     <div className="bg-pink-500 p-3 rounded-full">
                       <Instagram className="w-6 h-6 text-white" />
                     </div>
-                    <div className="text-white">
-                      <h3 className="font-semibold">Instagram</h3>
-                      <p className="text-gray-200">@artflowresin</p>
+                    <div className="text-primary-foreground">
+                      <h3 className="font-semibold font-serif">Instagram</h3>
+                      <p className="text-primary-foreground/80 font-sans">@wingedauraresin</p>
                     </div>
                   </div>
                 </CardContent>
@@ -78,9 +78,9 @@ const Contact = () => {
                     <div className="bg-purple-500 p-3 rounded-full">
                       <MapPin className="w-6 h-6 text-white" />
                     </div>
-                    <div className="text-white">
-                      <h3 className="font-semibold">Location</h3>
-                      <p className="text-gray-200">Toronto, Canada</p>
+                    <div className="text-primary-foreground">
+                      <h3 className="font-semibold font-serif">Location</h3>
+                      <p className="text-primary-foreground/80 font-sans">India</p>
                     </div>
                   </div>
                 </CardContent>
@@ -90,11 +90,11 @@ const Contact = () => {
             {/* CTA Section */}
             <div className="flex flex-col justify-center space-y-8">
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-white mb-4">
-                  Start Your Custom Order
+                <h3 className="text-2xl font-serif font-bold text-primary-foreground mb-4">
+                  Commission Your Nature Art
                 </h3>
-                <p className="text-gray-200 mb-8">
-                  Click the WhatsApp button below to discuss your custom resin art piece. I'll help bring your vision to life!
+                <p className="text-primary-foreground/80 mb-8 font-sans">
+                  Connect with me to discuss your custom nature-inspired piece. Let's preserve your special moments in art!
                 </p>
                 
                 <Button
@@ -107,14 +107,14 @@ const Contact = () => {
                 </Button>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20">
-                <h4 className="text-lg font-semibold text-white mb-3">What to expect:</h4>
-                <ul className="text-gray-200 space-y-2">
-                  <li>• Quick response within 24 hours</li>
-                  <li>• Custom design consultation</li>
-                  <li>• Transparent pricing</li>
-                  <li>• Progress updates during creation</li>
-                  <li>• Secure packaging and shipping</li>
+              <div className="bg-primary-foreground/10 backdrop-blur-md rounded-lg p-6 border border-primary-foreground/20">
+                <h4 className="text-lg font-serif font-semibold text-primary-foreground mb-3">What to expect:</h4>
+                <ul className="text-primary-foreground/80 space-y-2 font-sans">
+                  <li>• Personal consultation about your vision</li>
+                  <li>• Custom botanical selection process</li>
+                  <li>• Transparent, fair pricing</li>
+                  <li>• Creation progress updates</li>
+                  <li>• Careful packaging and shipping</li>
                 </ul>
               </div>
             </div>

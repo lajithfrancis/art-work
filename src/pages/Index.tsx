@@ -3,6 +3,7 @@ import React from 'react';
 import PromotionsBanner from '@/components/PromotionsBanner';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import ScrollingBanner from '@/components/ScrollingBanner';
 import Gallery from '@/components/Gallery';
 import About from '@/components/About';
 import Contact from '@/components/Contact';
@@ -14,6 +15,7 @@ const Index = () => {
       <PromotionsBanner />
       <Header />
       <Hero />
+      <ScrollingBanner />
       <Gallery />
       <About />
       <Contact />

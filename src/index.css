@@ -6,33 +6,42 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Nature-inspired sage and earth tones */
+    --background: 45 15% 97%;
+    --foreground: 120 8% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 120 8% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 120 8% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Sophisticated sage green primary */
+    --primary: 120 12% 35%;
+    --primary-foreground: 45 15% 97%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm secondary tones */
+    --secondary: 45 20% 90%;
+    --secondary-foreground: 120 8% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted earth tones */
+    --muted: 45 15% 94%;
+    --muted-foreground: 120 6% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Elegant accent colors */
+    --accent: 120 15% 85%;
+    --accent-foreground: 120 8% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Sophisticated earth tone for CTAs */
+    --elegant: 30 35% 65%;
+    --elegant-foreground: 45 15% 97%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 45 15% 97%;
+
+    --border: 120 8% 88%;
+    --input: 120 8% 88%;
+    --ring: 120 12% 35%;
 
     --radius: 0.5rem;
 
@@ -54,33 +63,36 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 120 8% 8%;
+    --foreground: 45 15% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 120 8% 10%;
+    --card-foreground: 45 15% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 120 8% 10%;
+    --popover-foreground: 45 15% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 120 15% 85%;
+    --primary-foreground: 120 8% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 120 8% 15%;
+    --secondary-foreground: 45 15% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 120 8% 15%;
+    --muted-foreground: 120 6% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 120 8% 20%;
+    --accent-foreground: 45 15% 95%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --elegant: 30 35% 65%;
+    --elegant-foreground: 120 8% 8%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 45 15% 95%;
+
+    --border: 120 8% 20%;
+    --input: 120 8% 20%;
+    --ring: 120 15% 85%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -98,8 +110,24 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-serif;
   }
+}
+
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+Pro:wght@300;400;500;600&display=swap');
+
+/* Elegant text effects */
+.elegant-text {
+  @apply bg-gradient-to-r from-primary via-elegant to-primary bg-clip-text text-transparent;
+}
+
+.nature-gradient {
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--elegant)));
+}
+
+.sophisticated-shadow {
+  box-shadow: 0 10px 30px -10px hsl(var(--primary) / 0.2);
 }
 
 /* Custom animations */

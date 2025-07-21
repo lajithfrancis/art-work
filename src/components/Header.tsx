@@ -14,10 +14,10 @@ const Header = () => {
   ];
 
   return (
-    <header className='fixed top-12 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm'>
+    <header className='fixed top-0 w-full bg-background/95 backdrop-blur-md z-50 shadow-sm border-b border-border'>
       <div className='container mx-auto px-4 py-4'>
         <div className='flex items-center justify-between'>
-          <div className='text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent'>
+          <div className='text-2xl font-serif font-bold elegant-text'>
             Winged Aura Artistry
           </div>
 
@@ -27,7 +27,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className='text-gray-700 hover:text-purple-600 transition-colors duration-300'
+                className='text-foreground hover:text-primary transition-colors duration-300 font-sans'
               >
                 {item.name}
               </a>
@@ -36,7 +36,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className='md:hidden'
+            className='md:hidden text-foreground'
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -50,7 +50,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className='block py-2 text-gray-700 hover:text-purple-600 transition-colors duration-300'
+                className='block py-2 text-foreground hover:text-primary transition-colors duration-300 font-sans'
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
