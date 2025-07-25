@@ -17,11 +17,12 @@ import ProductTabs from '@/components/ProductTabs';
 
 const ProductDetails: React.FC = () => {
   const { productId } = useParams<{ productId: string }>();
-  const [selectedSize, setSelectedSize] = useState<string>('');
   const location = useLocation();
 
   const product: Product | undefined =
     products[productId as keyof typeof products];
+    
+  const [selectedSize, setSelectedSize] = useState<string>(product?.sizes[0]?.id || '');
 
   useEffect(() => {
     if (location.state?.scrollY !== undefined) {
@@ -77,8 +78,9 @@ const ProductDetails: React.FC = () => {
           {/* Left: Product Images */}
           <div className='lg:sticky lg:top-24 lg:self-start'>
             <ProductImageGallery
-              mainImage={product.image}
-              title={product.title}
+              sizes={product.sizes}
+              selectedSize={selectedSize}
+              onSizeSelect={setSelectedSize}
             />
           </div>
 
