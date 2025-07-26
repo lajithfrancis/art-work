@@ -1,10 +1,12 @@
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
 import { Badge } from "@/components/ui/badge";
 
 const Hero = () => {
+  const [api, setApi] = useState<CarouselApi>();
+
   const heroSlides = [
     {
       id: 1,
@@ -40,9 +42,19 @@ const Hero = () => {
     }
   ];
 
+  useEffect(() => {
+    if (!api) return;
+
+    const autoPlay = setInterval(() => {
+      api.scrollNext();
+    }, 4000); // Change slide every 4 seconds
+
+    return () => clearInterval(autoPlay);
+  }, [api]);
+
   return (
     <section id="home" className="min-h-screen relative overflow-hidden">
-      <Carousel className="w-full h-screen">
+      <Carousel setApi={setApi} className="w-full h-screen" opts={{ loop: true }}>
         <CarouselContent>
           {heroSlides.map((slide) => (
             <CarouselItem key={slide.id} className="relative min-h-screen">
