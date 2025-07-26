@@ -15,7 +15,7 @@ const ScrollingBanner = () => {
   ];
 
   return (
-    <div className="w-full bg-muted py-3 overflow-hidden">
+    <div className="w-full bg-muted py-3 overflow-hidden pt-20">
       <div className="animate-scroll whitespace-nowrap">
         {/* Duplicate content for seamless loop */}
         {[...keywords, ...keywords].map((keyword, index) => (
