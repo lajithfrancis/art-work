@@ -6,42 +6,42 @@
 
 @layer base {
   :root {
-    /* Nature-inspired sage and earth tones */
-    --background: 45 15% 97%;
-    --foreground: 120 8% 15%;
+    /* Warm earthy palette with muted pinks and creams */
+    --background: 30 33% 96%;
+    --foreground: 17 27% 25%;
 
     --card: 0 0% 100%;
-    --card-foreground: 120 8% 15%;
+    --card-foreground: 17 27% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 120 8% 15%;
+    --popover-foreground: 17 27% 25%;
 
-    /* Sophisticated sage green primary */
-    --primary: 120 12% 35%;
-    --primary-foreground: 45 15% 97%;
+    /* Muted brownish-pink primary */
+    --primary: 17 27% 74%;
+    --primary-foreground: 30 33% 96%;
 
-    /* Warm secondary tones */
-    --secondary: 45 20% 90%;
-    --secondary-foreground: 120 8% 15%;
+    /* Light peachy cream secondary */
+    --secondary: 19 44% 93%;
+    --secondary-foreground: 17 27% 25%;
 
-    /* Muted earth tones */
-    --muted: 45 15% 94%;
-    --muted-foreground: 120 6% 45%;
+    /* Soft muted tones */
+    --muted: 17 33% 87%;
+    --muted-foreground: 17 27% 45%;
 
-    /* Elegant accent colors */
-    --accent: 120 15% 85%;
-    --accent-foreground: 120 8% 15%;
+    /* Accent with slightly different pink tone */
+    --accent: 13 27% 74%;
+    --accent-foreground: 30 33% 96%;
 
-    /* Sophisticated earth tone for CTAs */
-    --elegant: 30 35% 65%;
-    --elegant-foreground: 45 15% 97%;
+    /* Elegant earth tone for CTAs */
+    --elegant: 17 27% 74%;
+    --elegant-foreground: 30 33% 96%;
 
     --destructive: 0 65% 55%;
     --destructive-foreground: 45 15% 97%;
 
-    --border: 120 8% 88%;
-    --input: 120 8% 88%;
-    --ring: 120 12% 35%;
+    --border: 17 27% 84%;
+    --input: 17 27% 84%;
+    --ring: 17 27% 74%;
 
     --radius: 0.5rem;
 
