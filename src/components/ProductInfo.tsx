@@ -63,48 +63,38 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
         </div>
       )}
 
-      {/* Size Selection */}
-      <div>
-        <h3 className="text-lg font-semibold mb-3 text-foreground">
-          Available Sizes
-        </h3>
-        <div className="grid gap-3">
-          {sizes.map((size) => (
-            <Card
-              key={size.id}
-              className={`cursor-pointer transition-all hover:shadow-md ${
-                selectedSize === size.id 
-                  ? 'ring-2 ring-primary bg-primary/5' 
-                  : 'hover:bg-accent/50'
-              }`}
-              onClick={() => onSizeSelect(size.id)}
-            >
-              <CardContent className="p-4">
-                <div className="flex items-center justify-between">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2">
-                      <span className="font-medium text-foreground">
-                        {size.name}
-                      </span>
-                      {size.popular && (
-                        <Badge variant="secondary" className="text-xs">
-                          Popular
-                        </Badge>
-                      )}
-                    </div>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      {size.description}
-                    </p>
+      {/* Selected Size Details */}
+      {selectedSizeData && (
+        <div>
+          <h3 className="text-lg font-semibold mb-3 text-foreground">
+            Selected Size
+          </h3>
+          <Card className="ring-2 ring-primary bg-primary/5">
+            <CardContent className="p-4">
+              <div className="flex items-center justify-between">
+                <div className="flex-1">
+                  <div className="flex items-center gap-2">
+                    <span className="font-medium text-foreground">
+                      {selectedSizeData.name}
+                    </span>
+                    {selectedSizeData.popular && (
+                      <Badge variant="secondary" className="text-xs">
+                        Popular
+                      </Badge>
+                    )}
                   </div>
-                  <span className="text-lg font-bold text-primary ml-4">
-                    {size.price}
-                  </span>
+                  <p className="text-sm text-muted-foreground mt-1">
+                    {selectedSizeData.description}
+                  </p>
                 </div>
-              </CardContent>
-            </Card>
-          ))}
+                <span className="text-lg font-bold text-primary ml-4">
+                  {selectedSizeData.price}
+                </span>
+              </div>
+            </CardContent>
+          </Card>
         </div>
-      </div>
+      )}
 
       {/* Action Buttons */}
       <div className="flex flex-col gap-3 pt-4">
