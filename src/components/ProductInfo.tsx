@@ -29,15 +29,7 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
         <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
           {title}
         </h1>
-        <div className="flex items-center gap-2 mb-3">
-          <div className="flex items-center">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-            ))}
-            <span className="ml-1 text-sm text-muted-foreground">(4.8)</span>
-          </div>
-          <Badge variant="secondary">Handcrafted</Badge>
-        </div>
+        <Badge variant="secondary" className="mb-3 w-fit">Handcrafted</Badge>
         <p className="text-muted-foreground leading-relaxed">
           {description}
         </p>
