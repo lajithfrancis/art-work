@@ -112,9 +112,61 @@ const Gallery = () => {
         >
           <div className='flex space-x-6 px-4'>
             {[...products, ...products, ...products].map((product, index) => (
-               <Card
-                key={`${product.id}-${index}`}
-                className='group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex-shrink-0 w-72 rounded-3xl'
+              <Link key={`${product.id}-${index}`} to={`/product/${product.id}`}>
+                <Card
+                  className='group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex-shrink-0 w-72 rounded-3xl cursor-pointer'
+                >
+                  <CardContent className='p-0'>
+                    <div className='relative overflow-hidden rounded-t-3xl'>
+                      <img
+                        src={product.image}
+                        alt={product.title}
+                        className='w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 rounded-t-3xl'
+                      />
+                      <div className='absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-3xl'></div>
+                    </div>
+                    <div className='p-6'>
+                      <h3 className='text-xl font-serif font-semibold mb-2 text-foreground'>
+                        {product.title}
+                      </h3>
+                      <p className='text-muted-foreground mb-2 font-sans'>{product.description}</p>
+                      <p className='text-sm text-muted-foreground mb-1 font-sans'>
+                        {product.defaultSize}
+                      </p>
+                      <p className='text-lg font-semibold text-elegant mb-4 font-sans'>
+                        Starting at {product.startingPrice}
+                      </p>
+                      <Button
+                        className='w-full nature-gradient hover:opacity-90 text-primary-foreground font-sans sophisticated-shadow pointer-events-none'
+                      >
+                        View Sizes & Prices
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Mobile Dots Indicator */}
+        <div className='md:hidden flex justify-center space-x-2 mt-4'>
+          {products.map((_, index) => (
+            <div
+              key={index}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                activeIndex === index ? 'bg-primary w-8' : 'bg-muted'
+              }`}
+            />
+          ))}
+        </div>
+
+        {/* Desktop Grid View */}
+        <div className='hidden md:grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8'>
+          {products.map((product) => (
+            <Link key={product.id} to={`/product/${product.id}`}>
+              <Card
+                className='group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 rounded-3xl cursor-pointer'
               >
                 <CardContent className='p-0'>
                   <div className='relative overflow-hidden rounded-t-3xl'>
@@ -137,70 +189,14 @@ const Gallery = () => {
                       Starting at {product.startingPrice}
                     </p>
                     <Button
-                      asChild
-                      className='w-full nature-gradient hover:opacity-90 text-primary-foreground font-sans sophisticated-shadow'
+                      className='w-full nature-gradient hover:opacity-90 text-primary-foreground font-sans sophisticated-shadow pointer-events-none'
                     >
-                      <Link to={`/product/${product.id}`}>
-                        View Sizes & Prices
-                      </Link>
+                      View Sizes & Prices
                     </Button>
                   </div>
                 </CardContent>
               </Card>
-            ))}
-          </div>
-        </div>
-
-        {/* Mobile Dots Indicator */}
-        <div className='md:hidden flex justify-center space-x-2 mt-4'>
-          {products.map((_, index) => (
-            <div
-              key={index}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                activeIndex === index ? 'bg-primary w-8' : 'bg-muted'
-              }`}
-            />
-          ))}
-        </div>
-
-        {/* Desktop Grid View */}
-        <div className='hidden md:grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8'>
-          {products.map((product) => (
-            <Card
-              key={product.id}
-              className='group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 rounded-3xl'
-            >
-              <CardContent className='p-0'>
-                <div className='relative overflow-hidden rounded-t-3xl'>
-                  <img
-                    src={product.image}
-                    alt={product.title}
-                    className='w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 rounded-t-3xl'
-                  />
-                  <div className='absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-3xl'></div>
-                </div>
-                <div className='p-6'>
-                  <h3 className='text-xl font-serif font-semibold mb-2 text-foreground'>
-                    {product.title}
-                  </h3>
-                  <p className='text-muted-foreground mb-2 font-sans'>{product.description}</p>
-                  <p className='text-sm text-muted-foreground mb-1 font-sans'>
-                    {product.defaultSize}
-                  </p>
-                  <p className='text-lg font-semibold text-elegant mb-4 font-sans'>
-                    Starting at {product.startingPrice}
-                  </p>
-                  <Button
-                    asChild
-                    className='w-full nature-gradient hover:opacity-90 text-primary-foreground font-sans sophisticated-shadow'
-                  >
-                    <Link to={`/product/${product.id}`}>
-                      View Sizes & Prices
-                    </Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+            </Link>
           ))}
         </div>
       </div>
