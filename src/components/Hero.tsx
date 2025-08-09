@@ -10,36 +10,44 @@ const Hero = () => {
   const heroSlides = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1920&h=1080&fit=crop",
-      title: "Geode Art Collection",
-      subtitle: "Handcrafted Nature-Infused Art",
-      description: "Abstract, multi-panel designs featuring metallic and marble-like textures",
-      badge: "Best Seller"
+      // image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1920&h=1080&fit=crop",
+      image: '/geode-art/1.1.jpg',
+      title: 'Geode Art Collection',
+      subtitle: 'Handcrafted Nature-Infused Art',
+      description:
+        'Abstract, multi-panel designs featuring metallic and marble-like textures',
+      badge: 'Best Seller',
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=1920&h=1080&fit=crop",
-      title: "Wall Installations",
-      subtitle: "Transform Your Space",
-      description: "Large scale artistic installations with flowing resin compositions",
-      badge: "Featured"
+      // image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=1920&h=1080&fit=crop",
+      image: '/wall-installations/2.1.jpg',
+      title: 'Wall Installations',
+      subtitle: 'Transform Your Space',
+      description:
+        'Large scale artistic installations with flowing resin compositions',
+      badge: 'Featured',
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=1920&h=1080&fit=crop",
-      title: "Premium Resin Art",
-      subtitle: "Wild. Beautiful. Unforgettable.",
-      description: "Breathtaking artwork with rich blends mimicking natural agate formations",
-      badge: "Premium"
+      // image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=1920&h=1080&fit=crop",
+      image: '/resin-mirror/3.1.jpg',
+      title: 'Premium Resin Art',
+      subtitle: 'Wild. Beautiful. Unforgettable.',
+      description:
+        'Breathtaking artwork with rich blends mimicking natural agate formations',
+      badge: 'Premium',
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1578662015358-4c8d6e2a2c0a?w=1920&h=1080&fit=crop",
-      title: "Resin Mirrors",
-      subtitle: "Functional Art Pieces",
-      description: "Beautiful resin work combined with high-quality mirror elements",
-      badge: "New"
-    }
+      // image: "https://images.unsplash.com/photo-1578662015358-4c8d6e2a2c0a?w=1920&h=1080&fit=crop",
+      image: '/religion-wall-frames/4.1.jpg',
+      title: 'Resin Mirrors',
+      subtitle: 'Functional Art Pieces',
+      description:
+        'Beautiful resin work combined with high-quality mirror elements',
+      badge: 'New',
+    },
   ];
 
   useEffect(() => {

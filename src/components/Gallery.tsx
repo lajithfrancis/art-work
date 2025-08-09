@@ -57,8 +57,9 @@ const Gallery = () => {
       id: 'geode-art',
       title: 'Geode Art',
       description: 'Beautiful crystalline formations in resin',
-      image:
-        'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop',
+      // image:
+      //   'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop',
+      image: '/geode-art/1.1.jpg',
       defaultSize: 'Medium (12x16 inches)',
       startingPrice: '₹245',
     },
@@ -66,8 +67,9 @@ const Gallery = () => {
       id: 'wall-installations',
       title: 'Wall Installations',
       description: 'Large scale artistic wall pieces',
-      image:
-        'https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=400&fit=crop',
+      // image:
+      //   'https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=400&fit=crop',
+      image: '/wall-installations/2.1.jpg',
       defaultSize: 'Large (24x36 inches)',
       startingPrice: '₹850',
     },
@@ -75,8 +77,9 @@ const Gallery = () => {
       id: 'resin-mirror',
       title: 'Resin Mirror',
       description: 'Functional art pieces with mirror elements',
-      image:
-        'https://images.unsplash.com/photo-1578662015358-4c8d6e2a2c0a?w=400&h=400&fit=crop',
+      // image:
+      //   'https://images.unsplash.com/photo-1578662015358-4c8d6e2a2c0a?w=400&h=400&fit=crop',
+      image: '/resin-mirror/3.1.jpg',
       defaultSize: 'Round (18 inches)',
       startingPrice: '₹420',
     },
@@ -84,8 +87,9 @@ const Gallery = () => {
       id: 'religion-wall-frames',
       title: 'Religion Wall Frames',
       description: 'Spiritual and religious themed artwork',
-      image:
-        'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop',
+      // image:
+      //   'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop',
+      image: '/religion-wall-frames/4.1.jpg',
       defaultSize: 'Standard (16x20 inches)',
       startingPrice: '₹280',
     },
