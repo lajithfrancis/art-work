@@ -27,10 +27,10 @@ export const products: Record<string, Product> = {
       {
         id: 'small',
         name: '24" x 24" (Customizable)',
-        price: '₹800',
+        price: '₹5800',
         popular: false,
         description:
-          'Abstract, multi-panel design featuring a mix of metallic and marble-like textures with swirling patterns of silver, gray, and black, accented by gold embellishments. The central portion has a clustered gold texture, giving it a geode-inspired look.',
+          'Resin coated  on 10 mm MDF board in the image appears to be an abstract, multi-panel design featuring a mix of metallic and marble-like textures. It has a luxurious and artistic feel, with swirling patterns of silver, gray, and black, accented by gold embellishments that add a touch of opulence. The central portion has a clustered gold texture, giving it a geode-inspired look. The resin finish enhances the depth and shine, making the piece stand out as an elegant and modern decorative element.',
         // image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop"
         image: '/geode-art/1.1.jpg',
       },
@@ -40,7 +40,7 @@ export const products: Record<string, Product> = {
         price: '₹9200',
         popular: true,
         description:
-          'Stunning geode-inspired design with vibrant shades of blue, turquoise, and white, creating a mesmerizing natural stone effect. The edges are accentuated with gold detailing, adding a luxurious touch with intricate layering and texture.',
+          'This resin frame features a stunning geode-inspired design with vibrant shades of blue, turquoise, and white, creating a mesmerizing natural stone effect. The edges are accentuated with gold detailing, adding a luxurious touch that enhances the organic, fluid shapes within the piece. The resin finish provides a glossy, high-shine effect, making the colors appear rich and dynamic. The intricate layering and texture mimic the beauty of agate or crystal formations, making this frame a bold and elegant statement piece for any space',
         // image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=600&h=600&fit=crop"
         image: '/geode-art/1.2.jpg',
       },
@@ -50,7 +50,7 @@ export const products: Record<string, Product> = {
         price: '₹7500',
         popular: false,
         description:
-          'Striking geode-inspired art piece with rich, dark color palette featuring shades of deep brown, black, and shimmering metallic accents. The organic, irregular shape mimics natural formation with crystal-like embellishments.',
+          'This resin frame is a striking geode-inspired art piece with a rich, dark color palette featuring shades of deep brown, black, and shimmering metallic accents. The organic, irregular shape mimics the natural formation of a sliced geode, with intricate layers enhanced by gold detailing along the edges. The central portion is adorned with sparkling crystal-like embellishments, creating a dramatic contrast against the darker tones. The glossy resin finish amplifies the depth and brilliance of the design, making this frame an elegant and luxurious statement piece.',
         // image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=600&h=600&fit=crop&sat=-100"
         image: '/geode-art/1.3.jpg',
       },
@@ -60,7 +60,7 @@ export const products: Record<string, Product> = {
         price: '₹8000',
         popular: false,
         description:
-          'Breathtaking geode-inspired artwork with rich blend of deep emerald green, teal, and white, mimicking natural layers of an agate slice. Textured gold finish enhances its organic, raw mineral appearance with mesmerizing depth.',
+          'This resin frame is a breathtaking geode-inspired artwork with a rich blend of deep emerald green, teal, and white, mimicking the natural layers of an agate slice. The outer edges are adorned with a textured gold finish, enhancing its organic, raw mineral appearance. Intricate swirling patterns and shimmering crystal-like accents create a mesmerizing depth, making the piece feel luxurious and dynamic. The central hollow area adds an authentic geode effect, and the glossy resin finish amplifies the vibrancy and texture. This frame is a stunning statement piece, perfect for adding elegance and nature-inspired beauty to any space.',
         // image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=600&h=600&fit=crop"
         image: '/geode-art/1.4.jpg',
       },
@@ -70,7 +70,7 @@ export const products: Record<string, Product> = {
         price: '₹9200',
         popular: false,
         description:
-          'Sophisticated, nature-inspired design with warm, earthy tones of beige, cream, and gold. The layered, abstract pattern mimics organic flow of natural stone with luxurious appeal and elegant refined look.',
+          'This resin frame features a sophisticated, nature-inspired design with warm, earthy tones of beige, cream, and gold. The layered, abstract pattern mimics the organic flow of natural stone or agate, creating a visually stunning depth. The textured gold accents along the edges enhance its luxurious appeal, resembling mineral formations. The multi-panel arrangement adds a modern and dynamic touch, making it a statement piece. The glossy resin finish amplifies the richness of the colors and textures, giving the artwork an elegant and refined look. Perfect for adding warmth and elegance to any space.',
         // image:
         //   'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop&hue=30',
         image: '/geode-art/1.5.jpg',
@@ -87,54 +87,54 @@ export const products: Record<string, Product> = {
     sizes: [
       {
         id: 'large',
-        name: '36" x 48" Ocean Flow',
-        price: '₹12500',
+        name: '24 " ,18" , 12" dia(Customizable)',
+        price: '₹9800',
         popular: false,
         description:
-          'Massive ocean-inspired installation with deep blues and whites creating wave-like patterns. Multi-panel design with metallic silver accents that catch and reflect light beautifully.',
+          'These resin frames consist of a set of three circular, geode-inspired designs in neutral tones of beige, white, black, and gold. The swirling, layered patterns mimic natural agate or marble, with flowing lines and metallic gold accents adding a luxurious touch. Each piece has embedded textures resembling mineral formations, creating a visually dynamic and organic effect. The high-gloss resin finish enhances depth and elegance, making these frames a sophisticated decorative addition to any space. Their modern yet earthy aesthetic makes them versatile for various interior styles.',
         // image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=600&fit=crop"
         image: '/wall-installations/2.1.jpg',
       },
       {
         id: 'xlarge',
-        name: '48" x 60" Forest Canopy',
-        price: '₹15800',
+        name: '24 " dia(Customizable)',
+        price: '₹7500',
         popular: true,
         description:
-          'Grand forest-themed installation featuring rich greens, browns, and gold veining. The organic flow mimics tree canopies with intricate texturing and dimensional depth.',
+          'This circular resin frame features a striking contrast between two distinct textures and finishes. One half of the frame has a raw, concrete-like surface with a matte gray finish, giving it an industrial and minimalist feel. The other half is covered in a richly textured, crumpled fabric-like design, coated in metallic gold, creating a luxurious and dramatic effect. The fusion of these two elements—rough and smooth, matte and metallic—adds depth and sophistication, making this piece a bold statement for modern and contemporary interiors.',
         // image:
         //   'https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=600&h=600&fit=crop&hue=120',
         image: '/wall-installations/2.2.jpg',
       },
       {
         id: 'xxlarge',
-        name: '60" x 72" Cosmic Horizon',
-        price: '₹18900',
+        name: '16" , 14" , 12" dia(Customizable)',
+        price: '₹8500',
         popular: false,
         description:
-          'Spectacular space-inspired installation with deep purples, blacks, and metallic stars. Creates an otherworldly atmosphere with flowing nebula-like patterns and shimmering accents.',
+          'This resin frame features an organic and nature-inspired design, resembling delicate lily pads or sea coral formations. The set includes three irregularly shaped pieces in a soft, translucent green hue with intricate radial patterns that mimic natural textures. The glossy, almost glass-like resin finish enhances the depth and elegance of the design. The fluid, wavy edges give it a handcrafted, artistic feel, making it a perfect decorative piece for modern, botanical, or coastal-themed interiors.',
         // image:
         //   'https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=600&h=600&fit=crop&hue=270',
         image: '/wall-installations/2.3.jpg',
       },
       {
         id: 'custom',
-        name: 'Custom Size Installation',
-        price: 'Quote',
+        name: '24 " ,18" , 12" dia(Customizable)',
+        price: '₹8500',
         popular: false,
         description:
-          'Bespoke wall installation tailored to your space requirements. Choose your own color palette, size, and design elements for a truly unique artistic statement.',
+          'This resin frame set features a modern, abstract design with a striking contrast between deep black and sculpted white fabric-like textures. The circular frames have portions covered with a draped, wrinkled effect, resembling fabric frozen in motion. The white, sculptural elements stand out dramatically against the black background, creating a visually dynamic and elegant composition. The overall aesthetic is contemporary and minimalist, making it a perfect statement piece for modern interiors.',
         // image:
         //   'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop&blur=2',
         image: '/wall-installations/2.4.jpg',
       },
       {
         id: 'custom1',
-        name: 'Custom Size Installation',
-        price: 'Quote',
+        name: '32" x 20"(Customizable)',
+        price: '₹8000',
         popular: false,
         description:
-          'Bespoke wall installation tailored to your space requirements. Choose your own color palette, size, and design elements for a truly unique artistic statement.',
+          'The image showcases a striking abstract wall art installation mounted on a dark wall. The artwork consists of multiple irregularly shaped resin pieces arranged in a dynamic, flowing pattern. The pieces feature a mix of blue, green, yellow, and hints of white, creating a marbled or oceanic effect. The design gives the impression of movement, resembling flames, waves, or organic growth. The glossy, textured finish of the resin enhances the depth and visual appeal of the artwork. This piece serves as a bold and contemporary statement, ideal for modern interior decor.',
         // image:
         //   'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop&blur=2',
         image: '/wall-installations/2.5.jpg',
@@ -152,55 +152,54 @@ export const products: Record<string, Product> = {
     sizes: [
       {
         id: 'small',
-        name: '18" Round Sunrise Mirror',
-        price: '₹4200',
+        name: '24 " dia(Customizable)',
+        price: '₹6500',
         popular: false,
         description:
-          'Elegant round mirror with warm golden resin frame featuring sunrise-inspired gradients. The flowing patterns create a natural sunburst effect around the mirror surface.',
+          'The resin mirror in the image is a stunning, handcrafted piece with a geode-inspired design. It has a circular shape with a unique, textured border made of resin, mimicking the crystalline structure of natural geodes. The border features a blend of silver, white, and gray tones, with shimmering embedded elements that resemble crushed crystals or glitter. The irregular, wavy edge gives it an organic and artistic look.',
         // image:
         //   'https://images.unsplash.com/photo-1578662015358-4c8d6e2a2c0a?w=600&h=600&fit=crop&hue=30',
         image: '/resin-mirror/3.1.jpg',
       },
       {
         id: 'medium',
-        name: '24" Round Ocean Mirror',
-        price: '₹5800',
+        name: '32" x 20"(Customizable)',
+        price: '₹9000',
         popular: true,
         description:
-          'Stunning round mirror with ocean-inspired blue and teal resin frame. Wave-like patterns with white foam effects and gold accents create a coastal luxury feel.',
+          'The resin mirror in the image has an organic, irregular shape with a design that resembles agate or geode formations. The border is crafted with layers of white, beige, and gray resin swirls, mimicking natural stone patterns. Some sections of the frame incorporate glittering, crystal-like accents that add a touch of luxury and depth. The mirror itself is embedded within this artistic resin frame, creating a unique and elegant decor piece. The overall aesthetic is modern and nature-inspired, making it a statement piece for any interior space',
         // image:
         //   'https://images.unsplash.com/photo-1578662015358-4c8d6e2a2c0a?w=600&h=600&fit=crop&hue=200',
         image: '/resin-mirror/3.2.jpg',
       },
       {
         id: 'large',
-        name: '30" Round Forest Mirror',
-        price: '₹7200',
+        name: '26 " dia(Customizable)',
+        price: '₹7500',
         popular: false,
         description:
-          'Large round mirror with forest-themed green resin frame. Rich emerald and jade tones with gold veining create an organic, natural appearance perfect for nature lovers.',
+          'The resin mirror in this image has a circular design with an irregular, wavy-edged frame. The frame is predominantly black with gold accents, creating a luxurious and dramatic aesthetic. The gold details appear to be embedded within the resin, resembling natural mineral or geode formations. The mirror itself is simple and round, contrasting with the textured and artistic border. This piece has a bold, elegant style, making it a striking accent for sophisticated interiors.',
         // image:
         //   'https://images.unsplash.com/photo-1578662015358-4c8d6e2a2c0a?w=600&h=600&fit=crop&hue=120',
         image: '/resin-mirror/3.3.jpg',
       },
       {
         id: 'rectangular',
-        name: '24" x 36" Geode Mirror',
-        price: '₹8500',
+        name: '48 " x 24" (Customizable)',
+        price: '₹10000',
         popular: false,
-        description:
-          'Rectangular mirror with dramatic geode-inspired resin frame. Features crystalline formations, metallic accents, and natural stone patterns that frame your reflection beautifully.',
+        description: `This resin mirror has a rectangular shape with an artistic, irregularly edged frame. The frame features a mix of white, beige, and gold resin layers, creating a luxurious, geode-inspired aesthetic. The gold accents add a shimmering, high-end touch, enhancing the mirror's elegance. The organic flow of the resin design gives it a handcrafted and unique appeal, making it a stylish statement piece for sophisticated interiors. The mirror is placed against a white wall, complementing its refined look.`,
         // image:
         //   'https://images.unsplash.com/photo-1578662015358-4c8d6e2a2c0a?w=600&h=600&fit=crop',
         image: '/resin-mirror/3.4.jpg',
       },
       {
         id: 'custom',
-        name: '24" x 36" Geode Mirror',
-        price: '₹8500',
+        name: '24 " dia(Customizable)',
+        price: '₹6500',
         popular: false,
         description:
-          'Rectangular mirror with dramatic geode-inspired resin frame. Features crystalline formations, metallic accents, and natural stone patterns that frame your reflection beautifully.',
+          'This resin mirror has a circular shape with a partially decorated frame. The design features a geode-inspired aesthetic with blue, white, and gray resin layers, creating a natural, stone-like appearance. The edges of the decorated section include shimmering crystal-like accents, adding a touch of elegance and luxury. The contrast between the smooth mirror surface and the textured resin border enhances its artistic appeal. This piece would be a stunning addition to modern or contemporary interiors, offering a sophisticated and unique look.',
         // image:
         //   'https://images.unsplash.com/photo-1578662015358-4c8d6e2a2c0a?w=600&h=600&fit=crop',
         image: '/resin-mirror/3.5.jpg',
@@ -218,55 +217,55 @@ export const products: Record<string, Product> = {
     sizes: [
       {
         id: 'small',
-        name: '16" x 20" Sacred Lotus',
-        price: '₹3200',
+        name: '24 " x 24 "(Customizable)',
+        price: '₹5000',
         popular: false,
         description:
-          'Beautiful lotus-themed resin art with soft pinks, whites, and gold accents. The flowing petals create a serene meditation focal point with spiritual symbolism.',
+          'This resin artwork features a stunning geode-inspired design with deep emerald, black, and gold tones, accented by shimmering white and gold crystal embellishments. The fluid, marbled resin swirls create an elegant and organic look, resembling natural agate formations. The piece is further enhanced with Arabic calligraphy in gold, adding a spiritual and artistic touch. The combination of rich colors, metallic details, and crystalline textures makes this a luxurious and meaningful decorative piece, ideal for modern or contemporary interiors.',
         // image:
         //   'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop&hue=320',
         image: '/religion-wall-frames/4.1.jpg',
       },
       {
         id: 'medium',
-        name: '20" x 24" Divine Light',
-        price: '₹4200',
+        name: '48" x 24"(Customizable)',
+        price: '₹10000',
         popular: true,
         description:
-          'Radiant spiritual artwork featuring golden rays and divine light effects. The resin work creates depth and luminosity that evokes feelings of peace and transcendence.',
+          'This resin artwork features a luxurious deep green background with marbled patterns resembling natural malachite stone. Gold accents and veining flow through the design, adding richness and elegance. The centerpiece is an ornate circular Arabic calligraphy design in gold, surrounded by sparkling crystal embellishments. The intricate combination of colors, textures, and materials creates a high-end, spiritual, and artistic piece, perfect for modern and classic interiors.',
         // image:
         //   'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop&hue=50',
         image: '/religion-wall-frames/4.2.jpg',
       },
       {
         id: 'large',
-        name: '24" x 30" Om Meditation',
-        price: '₹5800',
+        name: '40" x 20"(Customizable)',
+        price: '₹7500',
         popular: false,
-        description:
-          'Powerful Om symbol rendered in flowing resin with deep blues, purples, and gold. The sacred geometry creates a perfect meditation piece with spiritual energy.',
+        description: `This resin artwork is a beautifully crafted spiritual piece featuring a Jain mantra written in elegant script. The background has a soft gradient of earthy tones, giving it a serene and calming effect. The artwork is bordered with gold, adding a touch of luxury and depth.
+At the top, there is an intricate cut-out of a meditating figure under a tree, symbolizing enlightenment and inner peace. The presence of gold leaf detailing and delicate botanical motifs on the sides further enhances its aesthetic appeal. This piece would be perfect for spiritual or meditative spaces, blending tradition with modern resin art techniques.`,
         // image:
         //   'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop&hue=240',
         image: '/religion-wall-frames/4.3.jpg',
       },
       {
         id: 'premium',
-        name: '20" x 24" LED Buddha Serenity',
-        price: '₹6500',
+        name: '12" x 12" ( Customizable)',
+        price: '₹2500',
         popular: false,
         description:
-          'Premium Buddha silhouette with integrated LED lighting. The backlit resin creates a gentle glow through peaceful blues and whites, perfect for meditation spaces.',
+          'This resin artwork features a pair of angel wings made of golden crushed glass, giving it a striking and textured 3D effect. The soft blue background creates a celestial feel, complementing the gold elements beautifully. Above the wings, a delicate golden halo is placed, adding a divine touch.',
         // image:
         //   'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop&brightness=20',
         image: '/religion-wall-frames/4.4.jpg',
       },
       {
         id: 'custom',
-        name: '20" x 24" LED Buddha Serenity',
-        price: '₹6500',
+        name: '12" x 12" ( Customizable)',
+        price: '₹3000',
         popular: false,
         description:
-          'Premium Buddha silhouette with integrated LED lighting. The backlit resin creates a gentle glow through peaceful blues and whites, perfect for meditation spaces.',
+          'This is a beautiful handcrafted resin cross embedded with real dried flowers and ferns. The clear resin creates a stunning effect, allowing the vibrant pink, white, blue, and orange flowers to shine through naturally. The design gives a sense of peace and spirituality, making it a perfect decorative piece or a meaningful gift. The background of greenery enhances the organic and nature-inspired aesthetic of the artwork.',
         // image:
         //   'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop&brightness=20',
         image: '/religion-wall-frames/4.5.jpg',
