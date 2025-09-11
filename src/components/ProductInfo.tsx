@@ -23,33 +23,33 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
   const selectedSizeData = sizes.find(size => size.id === selectedSize);
 
   return (
-    <div className="space-y-6">
+    <div className='space-y-6'>
       {/* Title and Rating */}
       <div>
-        <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+        <h1 className='text-2xl md:text-3xl font-bold text-foreground mb-2'>
           {title}
         </h1>
-        <Badge variant="secondary" className="mb-3 w-fit">Handcrafted</Badge>
-        <p className="text-muted-foreground leading-relaxed">
-          {description}
-        </p>
+        <Badge variant='secondary' className='mb-3 w-fit'>
+          Handcrafted
+        </Badge>
+        <p className='text-muted-foreground leading-relaxed'>{description}</p>
       </div>
 
       {/* Price Display */}
       {selectedSizeData && (
-        <div className="py-4 border-y border-border">
-          <div className="flex items-baseline gap-2">
-            <span className="text-3xl font-bold text-foreground">
+        <div className='py-4 border-y border-border'>
+          <div className='flex items-baseline gap-2'>
+            <span className='text-3xl font-bold text-foreground'>
               {selectedSizeData.price}
             </span>
-            <span className="text-lg text-muted-foreground line-through">
+            {/* <span className="text-lg text-muted-foreground line-through">
               ₹{(parseInt(selectedSizeData.price.replace('₹', '').replace(',', '')) * 1.2).toLocaleString('en-IN')}
             </span>
             <Badge className="bg-green-100 text-green-800 hover:bg-green-100">
               17% off
-            </Badge>
+            </Badge> */}
           </div>
-          <p className="text-sm text-muted-foreground mt-1">
+          <p className='text-sm text-muted-foreground mt-1'>
             Inclusive of all taxes
           </p>
         </div>
@@ -58,28 +58,28 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
       {/* Selected Size Details */}
       {selectedSizeData && (
         <div>
-          <h3 className="text-lg font-semibold mb-3 text-foreground">
+          <h3 className='text-lg font-semibold mb-3 text-foreground'>
             Selected Size
           </h3>
-          <Card className="ring-2 ring-primary bg-primary/5">
-            <CardContent className="p-4">
-              <div className="flex items-center justify-between">
-                <div className="flex-1">
-                  <div className="flex items-center gap-2">
-                    <span className="font-medium text-foreground">
+          <Card className='ring-2 ring-primary bg-primary/5'>
+            <CardContent className='p-4'>
+              <div className='flex items-center justify-between'>
+                <div className='flex-1'>
+                  <div className='flex items-center gap-2'>
+                    <span className='font-medium text-foreground'>
                       {selectedSizeData.name}
                     </span>
                     {selectedSizeData.popular && (
-                      <Badge variant="secondary" className="text-xs">
+                      <Badge variant='secondary' className='text-xs'>
                         Popular
                       </Badge>
                     )}
                   </div>
-                  <p className="text-sm text-muted-foreground mt-1">
+                  <p className='text-sm text-muted-foreground mt-1'>
                     {selectedSizeData.description}
                   </p>
                 </div>
-                <span className="text-lg font-bold text-primary ml-4">
+                <span className='text-lg font-bold text-primary ml-4'>
                   {selectedSizeData.price}
                 </span>
               </div>
@@ -89,18 +89,18 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
       )}
 
       {/* Action Buttons */}
-      <div className="flex flex-col gap-3 pt-4">
+      <div className='flex flex-col gap-3 pt-4'>
         <Button
-          size="lg"
-          className="w-full nature-gradient text-white py-3 text-lg font-semibold"
+          size='lg'
+          className='w-full nature-gradient text-white py-3 text-lg font-semibold'
           disabled={!selectedSize}
         >
           {selectedSize ? 'Enquire Now' : 'Select a Size to Enquire'}
         </Button>
         <Button
-          variant="outline"
-          size="lg"
-          className="w-full text-lg border-primary text-primary hover:bg-primary/5"
+          variant='outline'
+          size='lg'
+          className='w-full text-lg border-primary text-primary hover:bg-primary/5'
           disabled={!selectedSize}
         >
           Contact for Custom Order
@@ -108,22 +108,30 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
       </div>
 
       {/* Trust Indicators */}
-      <div className="grid grid-cols-2 gap-4 pt-6 border-t border-border">
-        <div className="flex items-center gap-2">
-          <Shield className="w-5 h-5 text-primary" />
-          <span className="text-sm text-muted-foreground">Authenticity Guaranteed</span>
+      <div className='grid grid-cols-2 gap-4 pt-6 border-t border-border'>
+        <div className='flex items-center gap-2'>
+          <Shield className='w-5 h-5 text-primary' />
+          <span className='text-sm text-muted-foreground'>
+            Authenticity Guaranteed
+          </span>
         </div>
-        <div className="flex items-center gap-2">
-          <Truck className="w-5 h-5 text-primary" />
-          <span className="text-sm text-muted-foreground">Free Shipping ₹500+</span>
+        <div className='flex items-center gap-2'>
+          <Truck className='w-5 h-5 text-primary' />
+          <span className='text-sm text-muted-foreground'>
+            Free Shipping ₹500+
+          </span>
         </div>
-        <div className="flex items-center gap-2">
-          <Award className="w-5 h-5 text-primary" />
-          <span className="text-sm text-muted-foreground">Handcrafted Quality</span>
+        <div className='flex items-center gap-2'>
+          <Award className='w-5 h-5 text-primary' />
+          <span className='text-sm text-muted-foreground'>
+            Handcrafted Quality
+          </span>
         </div>
-        <div className="flex items-center gap-2">
-          <Star className="w-5 h-5 text-primary" />
-          <span className="text-sm text-muted-foreground">Certificate Included</span>
+        <div className='flex items-center gap-2'>
+          <Star className='w-5 h-5 text-primary' />
+          <span className='text-sm text-muted-foreground'>
+            Certificate Included
+          </span>
         </div>
       </div>
     </div>

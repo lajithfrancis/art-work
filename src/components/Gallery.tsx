@@ -17,6 +17,7 @@ const Gallery = () => {
       <ProductListing title='Wall Accents / Decors' products={productsA} />
       <ProductListing title='Resin Clock' products={productsB} />
       <ProductListing title='Resin Key Chains' products={productsC} />
+      <ProductListing title='Resin Frames' products={productsD} />
 
       {/* You can add more product listings here */}
       {/* <ProductListing title="New Arrivals" products={newArrivals} /> */}
@@ -75,7 +76,7 @@ const productsB = [
     title: 'Resin Clock',
     description: 'Colorful and dynamic abstract art pieces',
     image: '/resin-clock/2.1.jpg',
-    defaultSize: 'Medium (12x16 inches)',
+    defaultSize: `26 " x 24 " ( Customizable)`,
     startingPrice: '$1500',
   },
 ];
@@ -86,7 +87,26 @@ const productsC = [
     title: 'Resin Key Chains',
     description: 'Colorful and dynamic abstract art pieces',
     image: '/resin-key-chains/3.1.jpg',
-    defaultSize: 'Medium (12x16 inches)',
+    defaultSize: `2.5 " x 1.5 " (Customizable)`,
     startingPrice: '$150',
+  },
+];
+
+const productsD = [
+  {
+    id: 'baby-keepsake-frame',
+    title: 'Baby Keepsake Frame',
+    description: 'Customized resin frame commemorating the birth of a baby',
+    image: 'resin-frames/7) Baby Keepsake Frame/7.1.jpeg',
+    defaultSize: `8" Dia ( Customizable)`,
+    startingPrice: '$1800',
+  },
+  {
+    id: 'wedding-flower-preservation',
+    title: 'Wedding Flower Preservation',
+    description: 'Colorful and dynamic abstract art pieces',
+    image: 'resin-frames/8) Wedding Flower preservation/8.1.jpg',
+    defaultSize: `8" x 8" x 1" ( Customizable)`,
+    startingPrice: '$1800',
   },
 ];

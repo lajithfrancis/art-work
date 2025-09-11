@@ -379,4 +379,94 @@ At the top, there is an intricate cut-out of a meditating figure under a tree, s
       },
     ],
   },
+  'baby-keepsake-frame': {
+    id: 'baby-keepsake-frame',
+    title: 'Baby Keepsake Frame',
+    description:
+      'Personalized resin frames to commemorate the birth of a baby with beautiful designs and embedded keepsakes',
+    image: '/resin-frames/7) Baby Keepsake Frame/7.1.jpeg',
+    sizes: [
+      {
+        id: 'standard',
+        name: `8" Dia 10" Dia 12" Dia ( Customizable)`,
+        price: `
+₹1800 /
+₹2200 /
+₹2600
+(As per size)`,
+        popular: false,
+        description:
+          'This is a customized resin frame commemorating the birth of a baby. It features the  birth details, photos, hospital tags, and decorative elements. A touching resin  keepsake  frame  celebrating the baby  arrival.',
+        image: '/resin-frames/7) Baby Keepsake Frame/7.1.jpeg',
+      },
+      {
+        id: 'large',
+        name: `14" Dia 16" Dia 24" Dia ( Customizable)`,
+        price: `
+₹2800 /
+₹3200 /
+₹6500
+(As per size)`,
+        popular: false,
+        description:
+          'This is a customized resin frame commemorating the birth of a baby. It features the  birth details, photos, hospital tags, and decorative elements. A touching resin  keepsake  frame  celebrating the baby  arrival.',
+        image: '/resin-frames/7) Baby Keepsake Frame/7.2.jpeg',
+      },
+      {
+        id: 'standard1',
+        name: `8" Dia 10" Dia 12" Dia ( Customizable)`,
+        price: `
+₹1800 /
+₹2200 /
+₹2600
+(As per size)`,
+        popular: false,
+        description:
+          'The frame has a charming and vibrant look with a glossy, ocean-themed design. The wavy edges, shimmering blue tones, and embedded keepsakes like hearts and tiny accessories give it a playful yet elegant feel. Photos and elements are thoughtfully arranged, making it a visually heartwarming and memorable display piece.',
+        image: '/resin-frames/7) Baby Keepsake Frame/7.3.jpeg',
+      },
+      {
+        id: 'standard2',
+        name: `8" Dia 10" Dia 12" Dia ( Customizable)`,
+        price: `
+₹1800 /
+₹2200 /
+₹2600
+(As per size)`,
+        popular: false,
+        description: `This resin frame is a beautiful twin baby  keepsake for Nihal and Niharikha, showcasing their birth details, photos, hospital tags, tiny footprints, and personal mementos. Split into blue and pink sections, it celebrates the twins' arrival .`,
+        image: '/resin-frames/7) Baby Keepsake Frame/7.4.jpeg',
+      },
+      {
+        id: 'standard3',
+        name: `8" Dia 10" Dia 12" Dia ( Customizable)`,
+        price: `
+₹1800 /
+₹2200 /
+₹2600
+(As per size)`,
+        popular: false,
+        description: `This resin baby frame is a personalized keepsake for Rihan Mathew, featuring his birth details (date, time, weight, height, and hospital name), ultrasound images, baby tag, family photos, and tiny memorabilia. Decorated with pressed flowers and heart accents, it lovingly honors his arrival and the joy of his proud parents, Vince & Ann.`,
+        image: '/resin-frames/7) Baby Keepsake Frame/7.4.jpeg',
+      },
+    ],
+  },
+  'wedding-flower-preservation': {
+    id: 'wedding-flower-preservation',
+    title: 'Wedding Flower Preservation',
+    description:
+      'Beautifully preserved wedding flowers encased in clear resin to create lasting keepsakes',
+    image: '/resin-frames/6) Wedding Flower preservation/7.1.jpeg',
+    sizes: [
+      {
+        id: 'standard',
+        name: `8" x 8" x 1" 10" x 10"x 1" 12" x 12" x1" ( Customizable)`,
+        price: `₹2100 / ₹2500 / ₹2900 (As per size)`,
+        popular: false,
+        description:
+          'This is a beautifully preserved wedding flower arrangement encased in clear resin. The piece features a mix of roses, greenery, and delicate filler flowers, creating a stunning and lasting keepsake of the special day. The resin enhances the colors and details of the flowers, making it a perfect decorative item or gift.',
+        image: '/resin-frames/8) Wedding Flower preservation/8.1.jpg',
+      },
+    ],
+  },
 };
