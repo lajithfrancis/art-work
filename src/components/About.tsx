@@ -27,23 +27,23 @@ const About = () => {
                 Nature Preserved in Art
               </h3>
               <p className='text-muted-foreground mb-6 leading-relaxed font-sans'>
-                Welcome to my world where nature and artistry converge. I
-                specialize in creating handcrafted resin pieces that capture the
-                ephemeral beauty of real flowers, leaves, and natural elements,
-                preserving them forever in crystalline clarity.
+                I create resin artworks that are inspired by the beauty and
+                rhythm of nature. The flow of the ocean, the calm of the sky,
+                the textures of earth—all of these guide my hand as I work with
+                resin to capture movement, light, and emotion in every piece.
               </p>
               <p className='text-muted-foreground mb-6 leading-relaxed font-sans'>
-                Each piece tells a story of moments captured in time - a pressed
-                flower from a mountain hike, autumn leaves that caught your eye,
-                or seasonal botanicals that speak to the soul. My art celebrates
-                the wild, beautiful, and unforgettable essence of the natural
-                world.
+                Alongside expressive abstracts, I also create memorial and
+                preservation artworks that hold onto cherished memories. Whether
+                it’s preserving flowers from a special day or creating a piece
+                in remembrance of a loved one, I see my art as a way of honoring
+                life’s most meaningful moments and giving them a lasting form.
               </p>
               <p className='text-muted-foreground leading-relaxed font-sans'>
-                I believe in creating art for those who collect moments, not
-                just things. Every piece is crafted with intention, preserving
-                nature's fleeting beauty in a form that will last for
-                generations.
+                For me, resin is more than a medium—it’s a way to connect with
+                people, to turn fleeting feelings into something permanent, and
+                to create art that speaks both to the heart and to the space it
+                belongs in.
               </p>
             </div>
           </div>
