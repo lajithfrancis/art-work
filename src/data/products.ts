@@ -272,4 +272,111 @@ At the top, there is an intricate cut-out of a meditating figure under a tree, s
       },
     ],
   },
+  'resin-clock': {
+    id: 'resin-clock',
+    title: 'Resin Clock',
+    description:
+      'Functional art pieces combining beautiful resin work with high-quality clock mechanisms',
+    image: '/resin-clock/5.1.jpg',
+    sizes: [
+      {
+        id: 'standard',
+        name: `26 " x 24 " ( Customizable)`,
+        price: '₹4800',
+        popular: false,
+        description:
+          'This is a stunning handcrafted resin clock with an elegant, organic shape. The clock face features a luxurious blend of white and gold hues, resembling marble or agate stone, with Roman numerals adding a classic touch. The intricate border is adorned with shimmering crystals, pearls, and metallic accents, giving it a glamorous and sophisticated look. This piece would make a perfect statement decor item for a modern or luxurious interior.',
+        image: '/resin-clock/2.1.jpg',
+      },
+      {
+        id: 'small',
+        name: `10" x 10" ( Customizable)`,
+        price: '₹1500',
+        popular: true,
+        description:
+          'This is a beautiful handcrafted resin clock with a delicate, nature-inspired design. The clock face features preserved flowers and leaves embedded in a soft, translucent resin base with gold accents. The organic, scalloped edges give it a handmade, artisanal feel. The gold and white numbering and elegant clock hands add a vintage charm. This piece would make a lovely decorative accent for a cozy or bohemian-style space.',
+        image: '/resin-clock/2.2.jpg',
+      },
+      {
+        id: 'premium',
+        name: `24 " x 24 " (Customizable)`,
+        price: '₹4000',
+        popular: false,
+        description:
+          'This is a stunning, handcrafted resin clock with a rich emerald green color, resembling malachite stone. The deep green swirls on the clock face create an elegant, luxurious aesthetic. The Roman numeral frame in gold adds a vintage and sophisticated touch, complementing the gemstone-like textured border. This piece blends artistry with functionality and would make a striking statement in a modern or classic interior.',
+        image: '/resin-clock/2.3.jpg',
+      },
+      {
+        id: 'custom',
+        name: `24 " x 24 " (Customizable)`,
+        price: '₹4000',
+        popular: false,
+        description:
+          'The image shows a modern and artistic wall clock with a unique resin design. The clock face appears to depict an abstract ocean or volcanic landscape, featuring black, white, and gold tones. The upper part has a glossy, reflective surface with a blue sky and tree branches reflecting on it. The lower portion has a textured, blackened area resembling burnt or volcanic rock, transitioning into white, smoky waves. The clock hands are gold, and the hour markers are minimalist gold bars.',
+        image: '/resin-clock/2.4.jpg',
+      },
+      {
+        id: 'custom1',
+        name: `24 " x 24 " (Customizable)`,
+        price: '₹3500',
+        popular: false,
+        description:
+          'The image shows a beautifully designed wall clock with a resin art finish, creating a stunning ocean-inspired scene. The clock face features deep blue waves with white foamy crests transitioning into a sandy beach with small stones and shells embedded for texture. The glossy surface reflects light, creating a dynamic look. Gold-colored minimalist hour markers and hands complement the aesthetic.',
+        image: '/resin-clock/2.5.jpg',
+      },
+    ],
+  },
+  'resin-key-chains': {
+    id: 'resin-key-chains',
+    title: 'Resin Key Chains',
+    description: 'Colorful and dynamic abstract art pieces',
+    image: '/resin-key-chains/3.1.jpg',
+    sizes: [
+      {
+        id: 'standard',
+        name: `2.5 " x 1.5 " (Customizable)`,
+        price: '₹200',
+        popular: false,
+        description:
+          'The image shows a beautifully crafted resin keychain. The keychain consists of a rectangular pendant with a black and gold design, featuring the phrase "expect miracles" written in elegant gold script. The bottom of the pendant contains embedded gold flakes, adding a luxurious touch. Attached to the keyring are additional decorative resin charms, including one with a gold key and another with a small tree design, both maintaining the black and gold theme.',
+        image: '/resin-key-chains/3.1.jpg',
+      },
+      {
+        id: 'small',
+        name: `2.5 " x 1.5 " (Customizable)`,
+        price: '₹150',
+        popular: false,
+        description:
+          'resin keychains shaped as letters, each featuring a combination of black, white, and gold tones. The designs incorporate embedded gold flakes, giving them an elegant and luxurious appearance. The keychains are attached to gold rings, complementing the overall aesthetic. The letters appear to be partially translucent, with a gradient effect blending from black to clear resin with gold accents.',
+        image: '/resin-key-chains/3.2.jpg',
+      },
+      {
+        id: 'extra-small',
+        name: `2" round ( Customizable)`,
+        price: '₹100',
+        popular: false,
+        description:
+          'Custom photo keychain featuring a printed picture of a family inside a resin casing. The keychain is attached to a metal ring and clasp, allowing it to be easily connected to keys or bags.',
+        image: '/resin-key-chains/3.3.jpg',
+      },
+      {
+        id: 'small',
+        name: `2" round ( Customizable)`,
+        price: '₹150',
+        popular: false,
+        description:
+          'This image showcases personalized resin keychains with gold flakes and elegant printed text. Each keychain features names, dates, and special occasions such as weddings and birthdays. The circular designs, paired with gold key rings, create a sophisticated and meaningful keepsake.',
+        image: '/resin-key-chains/3.4.jpg',
+      },
+      {
+        id: 'small',
+        name: `2.5 " x 1.5 " (Customizable)`,
+        price: '₹150',
+        popular: false,
+        description:
+          'This keychain features a beautifully crafted resin design with an ocean-inspired theme. The deep blue resin mimics waves crashing onto a sandy shore, complete with real sand, small shells, and white accents resembling seafoam. The word "Trust" is elegantly inscribed on the surface, adding a meaningful touch. The piece is attached to a silver chain, making it a stylish and symbolic accessory. This type of keychain is likely handcrafted, making it a unique and personalized item.',
+        image: '/resin-key-chains/3.5.jpg',
+      },
+    ],
+  },
 };
