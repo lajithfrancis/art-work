@@ -7,7 +7,7 @@ const ProductTabs: React.FC = () => {
     <div className='mt-12'>
       <Tabs defaultValue='details' className='w-full'>
         <TabsList className='grid w-full grid-cols-4'>
-          <TabsTrigger value='details'>Product Details</TabsTrigger>
+          <TabsTrigger value='details'>Details</TabsTrigger>
           <TabsTrigger value='specifications'>Specifications</TabsTrigger>
           <TabsTrigger value='care'>Instructions</TabsTrigger>
           <TabsTrigger value='shipping'>Shipping</TabsTrigger>
@@ -16,7 +16,7 @@ const ProductTabs: React.FC = () => {
         <TabsContent value='details' className='mt-6'>
           <Card>
             <CardContent className='p-6'>
-              <h3 className='text-lg font-semibold mb-4'>Details</h3>
+              <h3 className='text-lg font-semibold mb-4'>Product Details</h3>
               <div className='space-y-3 text-muted-foreground'>
                 <p>
                   Each piece is individually handcrafted using premium resin and

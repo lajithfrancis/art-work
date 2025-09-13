@@ -10,7 +10,7 @@ const Hero = () => {
   const heroSlides = [
     {
       id: 1,
-      image: '/geode-art/1.1.jpg',
+      image: '/geode-art/1.2.jpg',
       title: 'Geode Art Collection',
       subtitle: 'Handcrafted Nature-Infused Art',
       description:
@@ -19,7 +19,7 @@ const Hero = () => {
     },
     {
       id: 2,
-      image: '/wall-installations/2.1.jpg',
+      image: '/wall-installations/2.2.jpg',
       title: 'Wall Installations',
       subtitle: 'Transform Your Space',
       description:
@@ -29,7 +29,7 @@ const Hero = () => {
     {
       id: 3,
       image: '/resin-mirror/3.1.jpg',
-      title: 'Resit Mirror',
+      title: 'Resin Mirror',
       subtitle: 'Wild. Beautiful. Unforgettable.',
       description:
         'Breathtaking artwork with rich blends mimicking natural agate formations',
@@ -37,12 +37,30 @@ const Hero = () => {
     },
     {
       id: 4,
-      image: '/religion-wall-frames/4.1.jpg',
+      image: '/religion-wall-frames/4.2.jpg',
       title: 'Religion Wall Frames',
       subtitle: 'Functional Art Pieces',
       description:
         'Beautiful resin work combined with high-quality mirror elements',
       badge: 'New',
+    },
+    {
+      id: 5,
+      image: '/resin-clock/2.5.jpg',
+      title: 'Resin Clocks',
+      subtitle: 'Colorful and Dynamic',
+      description:
+        'Abstract art pieces that also serve as functional timepieces',
+      badge: 'Popular',
+    },
+    {
+      id: 6,
+      image: '/resin-key-chains/3.4.jpg',
+      title: 'Resin Key Chains',
+      subtitle: 'Small but Impactful',
+      description:
+        'Vibrant, customizable key chains made with intricate resin designs',
+      badge: 'Compact Art',
     },
   ];
 
