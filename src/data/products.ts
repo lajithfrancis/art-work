@@ -512,7 +512,7 @@ At the top, there is an intricate cut-out of a meditating figure under a tree, s
     image: '/resin-frames/anniversary-frame/10.1.jpg',
     sizes: [
       {
-        id: 'standard',
+        id: 'standard1',
         name: `24 " x 24" (Customizable)`,
         price: `₹5800`,
         popular: false,
@@ -521,7 +521,7 @@ At the top, there is an intricate cut-out of a meditating figure under a tree, s
         image: '/resin-frames/anniversary-frame/10.1.jpg',
       },
       {
-        id: 'standard',
+        id: 'standard2',
         name: `24 " x 24" (Customizable)`,
         price: `₹5800`,
         popular: false,
@@ -530,7 +530,7 @@ At the top, there is an intricate cut-out of a meditating figure under a tree, s
         image: '/resin-frames/anniversary-frame/10.2.jpg',
       },
       {
-        id: 'standard',
+        id: 'standard3',
         name: `24 " x 24" (Customizable)`,
         price: `₹5800`,
         popular: false,
@@ -539,7 +539,7 @@ At the top, there is an intricate cut-out of a meditating figure under a tree, s
         image: '/resin-frames/anniversary-frame/10.3.jpg',
       },
       {
-        id: 'standard',
+        id: 'standard4',
         name: `24 " x 24" (Customizable)`,
         price: `₹5800`,
         popular: false,
@@ -548,12 +548,66 @@ At the top, there is an intricate cut-out of a meditating figure under a tree, s
         image: '/resin-frames/anniversary-frame/10.4.jpg',
       },
       {
-        id: 'standard',
+        id: 'standard5',
         name: `24 " x 24" (Customizable)`,
         price: `₹5800`,
         popular: false,
         description:
           'Designed to preserve your special photo in crystal-clear resin. Enhanced with elegant details like flowers, gold flakes, or custom elements, it makes a timeless keepsake and the perfect anniversary gift.',
+        image: '/resin-frames/anniversary-frame/10.5.jpeg',
+      },
+    ],
+  },
+  'memorial-frame': {
+    id: 'anniversary-frame',
+    title: 'Anniversary Frame',
+    description:
+      'Personalized resin frames to commemorate special anniversaries with beautiful designs and embedded keepsakes',
+    image: '/resin-frames/anniversary-frame/10.1.jpg',
+    sizes: [
+      {
+        id: 'standard1',
+        name: `24 " x 24" (Customizable)`,
+        price: `₹5800`,
+        popular: false,
+        description:
+          'Crafted to preserve cherished photos and keepsakes in crystal-clear resin. Designed with delicate details such as flowers, gold flakes, or custom elements, it serves as a lasting tribute and a beautiful way to honor loved ones.',
+        image: '/resin-frames/anniversary-frame/10.1.jpg',
+      },
+      {
+        id: 'standard2',
+        name: `24 " x 24" (Customizable)`,
+        price: `₹5800`,
+        popular: false,
+        description:
+          'Crafted to preserve cherished photos and keepsakes in crystal-clear resin. Designed with delicate details such as flowers, gold flakes, or custom elements, it serves as a lasting tribute and a beautiful way to honor loved ones.',
+        image: '/resin-frames/anniversary-frame/10.2.jpg',
+      },
+      {
+        id: 'standard3',
+        name: `24 " x 24" (Customizable)`,
+        price: `₹5800`,
+        popular: false,
+        description:
+          'Crafted to preserve cherished photos and keepsakes in crystal-clear resin. Designed with delicate details such as flowers, gold flakes, or custom elements, it serves as a lasting tribute and a beautiful way to honor loved ones.',
+        image: '/resin-frames/anniversary-frame/10.3.jpg',
+      },
+      {
+        id: 'standard4',
+        name: `24 " x 24" (Customizable)`,
+        price: `₹5800`,
+        popular: false,
+        description:
+          'Crafted to preserve cherished photos and keepsakes in crystal-clear resin. Designed with delicate details such as flowers, gold flakes, or custom elements, it serves as a lasting tribute and a beautiful way to honor loved ones.',
+        image: '/resin-frames/anniversary-frame/10.4.jpg',
+      },
+      {
+        id: 'standard5',
+        name: `24 " x 24" (Customizable)`,
+        price: `₹5800`,
+        popular: false,
+        description:
+          'Crafted to preserve cherished photos and keepsakes in crystal-clear resin. Designed with delicate details such as flowers, gold flakes, or custom elements, it serves as a lasting tribute and a beautiful way to honor loved ones.',
         image: '/resin-frames/anniversary-frame/10.5.jpeg',
       },
     ],

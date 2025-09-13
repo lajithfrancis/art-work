@@ -117,4 +117,12 @@ const productsD = [
     defaultSize: `24 " x 24" (Customizable)`,
     startingPrice: '₹5800',
   },
+  {
+    id: 'memorial-frame',
+    title: 'Memorial Frame',
+    description: 'Customized resin frame commemorating a wedding anniversary',
+    image: 'resin-frames/memorial-frame/10.1.jpg',
+    defaultSize: `24 " x 24" (Customizable)`,
+    startingPrice: '₹5800',
+  },
 ];
