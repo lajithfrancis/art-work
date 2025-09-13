@@ -109,4 +109,12 @@ const productsD = [
     defaultSize: `8" x 8" x 1" ( Customizable)`,
     startingPrice: '₹1800',
   },
+  {
+    id: 'anniversary-frame',
+    title: 'Anniversary Frame',
+    description: 'Customized resin frame commemorating a wedding anniversary',
+    image: 'resin-frames/anniversary-frame/10.1.jpg',
+    defaultSize: `24 " x 24" (Customizable)`,
+    startingPrice: '₹5800',
+  },
 ];

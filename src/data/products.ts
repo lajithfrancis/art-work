@@ -463,9 +463,98 @@ At the top, there is an intricate cut-out of a meditating figure under a tree, s
         name: `8" x 8" x 1" 10" x 10"x 1" 12" x 12" x1" ( Customizable)`,
         price: `₹2100 / ₹2500 / ₹2900 (As per size)`,
         popular: false,
-        description:
-          'This is a beautifully preserved wedding flower arrangement encased in clear resin. The piece features a mix of roses, greenery, and delicate filler flowers, creating a stunning and lasting keepsake of the special day. The resin enhances the colors and details of the flowers, making it a perfect decorative item or gift.',
+        description: `Elegant handcrafted resin frame with preserved florals and golden bead accents, highlighting a central wedding photograph. A timeless keepsake for displaying cherished memories.`,
         image: '/resin-frames/wedding-flower-preservation/8.1.jpg',
+      },
+      {
+        id: 'small',
+        name: `8" Dia 10" Dia 12" Dia ( Customizable)`,
+        price: `₹1800 ₹2200 ₹2600 (As per size)`,
+        popular: false,
+        description:
+          'Elegant handcrafted resin frame with preserved florals and golden bead accents, highlighting a central wedding photograph. A timeless keepsake for displaying cherished memories.',
+        image: '/resin-frames/wedding-flower-preservation/8.2.jpg',
+      },
+      {
+        id: 'large',
+        name: `8" x 8" x 2" 10" x 10" x 2" 12" x 12" x 2" ( Customizable)`,
+        price: `₹2500 ₹2900 ₹3300 (As per size)`,
+        popular: false,
+        description:
+          'Elegant handcrafted resin frame with preserved florals and golden bead accents, highlighting a central wedding photograph. A timeless keepsake for displaying cherished memories.',
+        image: '/resin-frames/wedding-flower-preservation/8.3.jpg',
+      },
+      {
+        id: 'large1',
+        name: `8" x 8" x 2" 10" x 10" x 2" 12" x 12" x 2" ( Customizable)`,
+        price: `₹2500 ₹2900 ₹3300 (As per size)`,
+        popular: false,
+        description:
+          'Elegant handcrafted resin frame with preserved florals and golden bead accents, highlighting a central wedding photograph. A timeless keepsake for displaying cherished memories.',
+        image: '/resin-frames/wedding-flower-preservation/8.4.jpg',
+      },
+      {
+        id: 'large2',
+        name: `8" x 8" x 1" 10" x 10" x 1" 12" x 12" x 1" ( Customizable)`,
+        price: `₹2100 ₹2500 ₹2900 (As per size)`,
+        popular: false,
+        description:
+          'Elegant handcrafted resin frame with preserved florals and golden bead accents, highlighting a central wedding photograph. A timeless keepsake for displaying cherished memories.',
+        image: '/resin-frames/wedding-flower-preservation/8.5.jpg',
+      },
+    ],
+  },
+  'anniversary-frame': {
+    id: 'anniversary-frame',
+    title: 'Anniversary Frame',
+    description:
+      'Personalized resin frames to commemorate special anniversaries with beautiful designs and embedded keepsakes',
+    image: '/resin-frames/anniversary-frame/10.1.jpg',
+    sizes: [
+      {
+        id: 'standard',
+        name: `24 " x 24" (Customizable)`,
+        price: `₹5800`,
+        popular: false,
+        description:
+          'Designed to preserve your special photo in crystal-clear resin. Enhanced with elegant details like flowers, gold flakes, or custom elements, it makes a timeless keepsake and the perfect anniversary gift.',
+        image: '/resin-frames/anniversary-frame/10.1.jpg',
+      },
+      {
+        id: 'standard',
+        name: `24 " x 24" (Customizable)`,
+        price: `₹5800`,
+        popular: false,
+        description:
+          'Designed to preserve your special photo in crystal-clear resin. Enhanced with elegant details like flowers, gold flakes, or custom elements, it makes a timeless keepsake and the perfect anniversary gift.',
+        image: '/resin-frames/anniversary-frame/10.2.jpg',
+      },
+      {
+        id: 'standard',
+        name: `24 " x 24" (Customizable)`,
+        price: `₹5800`,
+        popular: false,
+        description:
+          'Designed to preserve your special photo in crystal-clear resin. Enhanced with elegant details like flowers, gold flakes, or custom elements, it makes a timeless keepsake and the perfect anniversary gift.',
+        image: '/resin-frames/anniversary-frame/10.3.jpg',
+      },
+      {
+        id: 'standard',
+        name: `24 " x 24" (Customizable)`,
+        price: `₹5800`,
+        popular: false,
+        description:
+          'Designed to preserve your special photo in crystal-clear resin. Enhanced with elegant details like flowers, gold flakes, or custom elements, it makes a timeless keepsake and the perfect anniversary gift.',
+        image: '/resin-frames/anniversary-frame/10.4.jpg',
+      },
+      {
+        id: 'standard',
+        name: `24 " x 24" (Customizable)`,
+        price: `₹5800`,
+        popular: false,
+        description:
+          'Designed to preserve your special photo in crystal-clear resin. Enhanced with elegant details like flowers, gold flakes, or custom elements, it makes a timeless keepsake and the perfect anniversary gift.',
+        image: '/resin-frames/anniversary-frame/10.5.jpeg',
       },
     ],
   },
