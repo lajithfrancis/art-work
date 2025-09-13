@@ -16,8 +16,8 @@ const Gallery = () => {
 
       <ProductListing title='Wall Accents / Decors' products={productsA} />
       <ProductListing title='Resin Clock' products={productsB} />
-      <ProductListing title='Resin Key Chains' products={productsC} />
-      <ProductListing title='Resin Frames' products={productsD} />
+      <ProductListing title='Resin Key Chains / Frames' products={productsC} />
+      {/* <ProductListing title='Resin Frames' products={productsD} /> */}
 
       {/* You can add more product listings here */}
       {/* <ProductListing title="New Arrivals" products={newArrivals} /> */}
@@ -72,28 +72,6 @@ const productsA = [
 
 const productsB = [
   {
-    id: 'resin-clock',
-    title: 'Resin Clock',
-    description: 'Colorful and dynamic abstract art pieces',
-    image: '/resin-clock/2.1.jpg',
-    defaultSize: `26 " x 24 " ( Customizable)`,
-    startingPrice: '₹1500',
-  },
-];
-
-const productsC = [
-  {
-    id: 'resin-key-chains',
-    title: 'Resin Key Chains',
-    description: 'Colorful and dynamic abstract art pieces',
-    image: '/resin-key-chains/3.1.jpg',
-    defaultSize: `2.5 " x 1.5 " (Customizable)`,
-    startingPrice: '₹150',
-  },
-];
-
-const productsD = [
-  {
     id: 'baby-keepsake-frame',
     title: 'Baby Keepsake Frame',
     description: 'Customized resin frame commemorating the birth of a baby',
@@ -126,3 +104,35 @@ const productsD = [
     startingPrice: '₹5800',
   },
 ];
+
+const productsC = [
+  {
+    id: 'resin-clock',
+    title: 'Resin Clock',
+    description: 'Colorful and dynamic abstract art pieces',
+    image: '/resin-clock/2.1.jpg',
+    defaultSize: `26 " x 24 " ( Customizable)`,
+    startingPrice: '₹1500',
+  },
+  {
+    id: 'resin-key-chains',
+    title: 'Resin Key Chains',
+    description: 'Colorful and dynamic abstract art pieces',
+    image: '/resin-key-chains/3.1.jpg',
+    defaultSize: `2.5 " x 1.5 " (Customizable)`,
+    startingPrice: '₹150',
+  },
+];
+
+// const productsD = [
+//   {
+//     id: 'resin-key-chains',
+//     title: 'Resin Key Chains',
+//     description: 'Colorful and dynamic abstract art pieces',
+//     image: '/resin-key-chains/3.1.jpg',
+//     defaultSize: `2.5 " x 1.5 " (Customizable)`,
+//     startingPrice: '₹150',
+//   },
+// ];
+
+
