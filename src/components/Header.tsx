@@ -14,13 +14,13 @@ const Header = () => {
 
   return (
     <header className='fixed top-0 w-full bg-background/95 backdrop-blur-md z-50 shadow-sm border-b border-border'>
-      <div className='container mx-auto px-4 py-4'>
+      <div className='container mx-auto'>
         <div className='flex items-center justify-between'>
           <div className='flex items-center'>
             <img
               src='/lovable-uploads/icon-1.png'
               alt='Winged Aura Artistry'
-              className='h-12 w-12'
+              className='h-20 w-20'
             />
           </div>
           <h1 className='header-text'>Winged Aura Artistry</h1>
