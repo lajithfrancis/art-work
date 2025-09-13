@@ -153,3 +153,24 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+.header-text {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
+      color: #333;
+      display: inline-block;
+      /* padding: 20px 20px; */
+      position: relative;
+      /* font-weight: bolder; */
+    }
+
+    .header-text::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      opacity: 0.6;
+      z-index: -1;
+    }

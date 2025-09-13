@@ -23,7 +23,7 @@ const Header = () => {
               className='h-12 w-12'
             />
           </div>
-
+          <h1 className='header-text'>Winged Aura Artistry</h1>
           {/* Desktop Navigation */}
           <nav className='hidden md:flex space-x-8'>
             {navItems.map((item) => (
@@ -36,7 +36,6 @@ const Header = () => {
               </a>
             ))}
           </nav>
-
           {/* Mobile Menu Button */}
           <button
             className='md:hidden text-foreground'
