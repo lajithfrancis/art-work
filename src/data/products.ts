@@ -563,7 +563,7 @@ At the top, there is an intricate cut-out of a meditating figure under a tree, s
     title: 'Anniversary Frame',
     description:
       'Personalized resin frames to commemorate special anniversaries with beautiful designs and embedded keepsakes',
-    image: '/resin-frames/anniversary-frame/10.1.jpg',
+    image: '/resin-frames/memorial-frame/10.1.jpg',
     sizes: [
       {
         id: 'standard1',
@@ -572,7 +572,7 @@ At the top, there is an intricate cut-out of a meditating figure under a tree, s
         popular: false,
         description:
           'Crafted to preserve cherished photos and keepsakes in crystal-clear resin. Designed with delicate details such as flowers, gold flakes, or custom elements, it serves as a lasting tribute and a beautiful way to honor loved ones.',
-        image: '/resin-frames/anniversary-frame/10.1.jpg',
+        image: '/resin-frames/memorial-frame/10.1.jpg',
       },
       {
         id: 'standard2',
@@ -581,7 +581,7 @@ At the top, there is an intricate cut-out of a meditating figure under a tree, s
         popular: false,
         description:
           'Crafted to preserve cherished photos and keepsakes in crystal-clear resin. Designed with delicate details such as flowers, gold flakes, or custom elements, it serves as a lasting tribute and a beautiful way to honor loved ones.',
-        image: '/resin-frames/anniversary-frame/10.2.jpg',
+        image: '/resin-frames/memorial-frame/10.2.jpg',
       },
       {
         id: 'standard3',
@@ -590,7 +590,7 @@ At the top, there is an intricate cut-out of a meditating figure under a tree, s
         popular: false,
         description:
           'Crafted to preserve cherished photos and keepsakes in crystal-clear resin. Designed with delicate details such as flowers, gold flakes, or custom elements, it serves as a lasting tribute and a beautiful way to honor loved ones.',
-        image: '/resin-frames/anniversary-frame/10.3.jpg',
+        image: '/resin-frames/memorial-frame/10.3.jpg',
       },
       {
         id: 'standard4',
@@ -599,7 +599,7 @@ At the top, there is an intricate cut-out of a meditating figure under a tree, s
         popular: false,
         description:
           'Crafted to preserve cherished photos and keepsakes in crystal-clear resin. Designed with delicate details such as flowers, gold flakes, or custom elements, it serves as a lasting tribute and a beautiful way to honor loved ones.',
-        image: '/resin-frames/anniversary-frame/10.4.jpg',
+        image: '/resin-frames/memorial-frame/10.4.jpg',
       },
       {
         id: 'standard5',
@@ -608,7 +608,7 @@ At the top, there is an intricate cut-out of a meditating figure under a tree, s
         popular: false,
         description:
           'Crafted to preserve cherished photos and keepsakes in crystal-clear resin. Designed with delicate details such as flowers, gold flakes, or custom elements, it serves as a lasting tribute and a beautiful way to honor loved ones.',
-        image: '/resin-frames/anniversary-frame/10.5.jpeg',
+        image: '/resin-frames/memorial-frame/10.5.jpeg',
       },
     ],
   },
