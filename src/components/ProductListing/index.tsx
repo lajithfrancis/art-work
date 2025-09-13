@@ -43,7 +43,7 @@ export const ProductListing = ({ title, products }: ProductListingProps) => {
       <div
         ref={scrollRef}
         className='md:hidden overflow-x-auto pb-4 scrollbar-hide'
-        onScroll={handleScroll}
+        // onScroll={handleScroll}
       >
         <div className='flex space-x-6 px-4'>
           {[...products].map((product, index) => (

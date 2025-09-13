@@ -14,9 +14,12 @@ const Gallery = () => {
         </p>
       </div>
 
-      <ProductListing title='Wall Accents / Decors' products={productsA} />
-      <ProductListing title='Resin Clock' products={productsB} />
-      <ProductListing title='Resin Key Chains / Frames' products={productsC} />
+      <ProductListing
+        title='Resin Wall Accents / Decors'
+        products={productsA}
+      />
+      <ProductListing title='Resin Frames' products={productsB} />
+      <ProductListing title='Resin Clocks / Key Chains' products={productsC} />
       {/* <ProductListing title='Resin Frames' products={productsD} /> */}
 
       {/* You can add more product listings here */}
