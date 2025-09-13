@@ -156,12 +156,17 @@
 
 .header-text {
       font-family: 'Great Vibes', cursive;
-      font-size: 2rem;
+      font-size: 1.5rem; /* Default size for mobile */
       color: #333;
       display: inline-block;
-      /* padding: 20px 20px; */
       position: relative;
-      /* font-weight: bolder; */
+    }
+
+    /* Larger font size for desktop screens */
+    @media (min-width: 768px) {
+      .header-text {
+        font-size: 2rem;
+      }
     }
 
     .header-text::before {
