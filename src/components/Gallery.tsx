@@ -77,7 +77,7 @@ const productsB = [
     description: 'Colorful and dynamic abstract art pieces',
     image: '/resin-clock/2.1.jpg',
     defaultSize: `26 " x 24 " ( Customizable)`,
-    startingPrice: '$1500',
+    startingPrice: '₹1500',
   },
 ];
 
@@ -88,7 +88,7 @@ const productsC = [
     description: 'Colorful and dynamic abstract art pieces',
     image: '/resin-key-chains/3.1.jpg',
     defaultSize: `2.5 " x 1.5 " (Customizable)`,
-    startingPrice: '$150',
+    startingPrice: '₹150',
   },
 ];
 
@@ -99,7 +99,7 @@ const productsD = [
     description: 'Customized resin frame commemorating the birth of a baby',
     image: 'resin-frames/baby-keepsake-frame/7.1.jpeg',
     defaultSize: `8" Dia ( Customizable)`,
-    startingPrice: '$1800',
+    startingPrice: '₹1800',
   },
   {
     id: 'wedding-flower-preservation',
@@ -107,6 +107,6 @@ const productsD = [
     description: 'Colorful and dynamic abstract art pieces',
     image: 'resin-frames/wedding-flower-preservation/8.1.jpg',
     defaultSize: `8" x 8" x 1" ( Customizable)`,
-    startingPrice: '$1800',
+    startingPrice: '₹1800',
   },
 ];
