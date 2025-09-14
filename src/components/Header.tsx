@@ -1,6 +1,7 @@
 import React from 'react';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { getAssetPath } from '@/utils/assetPath';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ const Header = () => {
         <div className='flex items-center justify-between'>
           <div className='flex items-center'>
             <img
-              src='/lovable-uploads/icon-1.png'
+              src={getAssetPath('/lovable-uploads/icon-1.png')}
               alt='Winged Aura Artistry'
               className='h-20 w-20'
             />

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Palette, Heart, Star } from 'lucide-react';
+import { getAssetPath } from '@/utils/assetPath';
 
 const About = () => {
   return (
@@ -17,7 +18,7 @@ const About = () => {
           <div className='grid md:grid-cols-2 gap-12 items-center mb-16'>
             <div>
               <img
-                src='/artist/artist.jpg'
+                src={getAssetPath('/artist/artist.jpg')}
                 alt='Artist at work'
                 className='rounded-lg shadow-lg w-full h-[650px] object-cover'
               />

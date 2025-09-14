@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
 import { Badge } from "@/components/ui/badge";
+import { getAssetPath } from '@/utils/assetPath';
 
 const Hero = () => {
   const [api, setApi] = useState<CarouselApi>();
@@ -75,52 +76,56 @@ const Hero = () => {
   }, [api]);
 
   return (
-    <section id="home" className="min-h-screen relative overflow-hidden">
-      <Carousel setApi={setApi} className="w-full h-screen" opts={{ loop: true }}>
+    <section id='home' className='min-h-screen relative overflow-hidden'>
+      <Carousel
+        setApi={setApi}
+        className='w-full h-screen'
+        opts={{ loop: true }}
+      >
         <CarouselContent>
           {heroSlides.map((slide) => (
-            <CarouselItem key={slide.id} className="relative min-h-screen">
+            <CarouselItem key={slide.id} className='relative min-h-screen'>
               {/* Background Image */}
-              <div 
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                style={{ backgroundImage: `url(${slide.image})` }}
+              <div
+                className='absolute inset-0 bg-cover bg-center bg-no-repeat'
+                style={{ backgroundImage: `url(${getAssetPath(slide.image)})` }}
               />
-              
+
               {/* Overlay */}
-              <div className="absolute inset-0 bg-black/40" />
-              
+              <div className='absolute inset-0 bg-black/40' />
+
               {/* Content */}
-              <div className="relative z-10 h-full flex items-center justify-center">
-                <div className="text-center px-4 max-w-4xl mx-auto text-white">
-                  <Badge className="mb-4 bg-elegant text-elegant-foreground">
+              <div className='relative z-10 h-full flex items-center justify-center'>
+                <div className='text-center px-4 max-w-4xl mx-auto text-white'>
+                  <Badge className='mb-4 bg-elegant text-elegant-foreground'>
                     {slide.badge}
                   </Badge>
-                  
-                  <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-4 leading-tight">
+
+                  <h1 className='text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-4 leading-tight'>
                     {slide.title}
                   </h1>
-                  
-                  <p className="text-xl md:text-2xl mb-2 font-serif italic text-elegant-foreground">
+
+                  <p className='text-xl md:text-2xl mb-2 font-serif italic text-elegant-foreground'>
                     {slide.subtitle}
                   </p>
-                  
-                  <p className="text-base md:text-lg mb-8 max-w-2xl mx-auto text-white/90 font-sans">
+
+                  <p className='text-base md:text-lg mb-8 max-w-2xl mx-auto text-white/90 font-sans'>
                     {slide.description}
                   </p>
-                  
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button 
-                      size="lg" 
-                      className="nature-gradient hover:opacity-90 text-primary-foreground px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 sophisticated-shadow font-sans"
+
+                  <div className='flex flex-col sm:flex-row gap-4 justify-center'>
+                    <Button
+                      size='lg'
+                      className='nature-gradient hover:opacity-90 text-primary-foreground px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 sophisticated-shadow font-sans'
                     >
-                      <a href="#gallery">Shop Collection</a>
+                      <a href='#gallery'>Shop Collection</a>
                     </Button>
-                    <Button 
-                      variant="outline" 
-                      size="lg"
-                      className="border-white text-white hover:bg-white hover:text-primary px-8 py-3 rounded-lg transition-all duration-300 font-sans bg-white/10 backdrop-blur-sm"
+                    <Button
+                      variant='outline'
+                      size='lg'
+                      className='border-white text-white hover:bg-white hover:text-primary px-8 py-3 rounded-lg transition-all duration-300 font-sans bg-white/10 backdrop-blur-sm'
                     >
-                      <a href="#contact">Custom Order</a>
+                      <a href='#contact'>Custom Order</a>
                     </Button>
                   </div>
                 </div>
@@ -128,9 +133,9 @@ const Hero = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        
-        <CarouselPrevious className="left-4 bg-white/20 border-white/30 text-white hover:bg-white/30" />
-        <CarouselNext className="right-4 bg-white/20 border-white/30 text-white hover:bg-white/30" />
+
+        <CarouselPrevious className='left-4 bg-white/20 border-white/30 text-white hover:bg-white/30' />
+        <CarouselNext className='right-4 bg-white/20 border-white/30 text-white hover:bg-white/30' />
       </Carousel>
     </section>
   );
