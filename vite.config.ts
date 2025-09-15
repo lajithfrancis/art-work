@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import spa from 'vite-plugin-spa-fallback';
 import path from 'path';
+import { getBaseUrl } from './src/utils/baseUrl';
 
 export default defineConfig(({ command }) => {
   const isProduction = command === 'build';
@@ -13,7 +14,7 @@ export default defineConfig(({ command }) => {
       port: 8080,
     },
     plugins: [react(), spa()],
-    base: '/',
+    base: getBaseUrl(),
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),

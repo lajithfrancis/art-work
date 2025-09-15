@@ -19,7 +19,7 @@ const Gallery = () => {
         products={productsA}
       />
       <ProductListing title='Resin Frames' products={productsB} />
-      <ProductListing title='Resin Clocks / Key Chains' products={productsC} />
+      <ProductListing title='Resin Clocks & Key Chains' products={productsC} />
       {/* <ProductListing title='Resin Frames' products={productsD} /> */}
 
       {/* You can add more product listings here */}
@@ -102,7 +102,7 @@ const productsB = [
     id: 'memorial-frame',
     title: 'Memorial Frame',
     description: 'Customized resin frame commemorating a wedding anniversary',
-    image: '/resin-frames/memorial-frame/10.1.jpg',
+    image: '/resin-frames/memorial-frame/10.2.jpg',
     defaultSize: `24 " x 24" (Customizable)`,
     startingPrice: '₹5800',
   },
