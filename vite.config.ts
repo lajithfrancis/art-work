@@ -13,7 +13,7 @@ export default defineConfig(({ command }) => {
       port: 8080,
     },
     plugins: [react(), spa()],
-    base,
+    base: '/',
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),

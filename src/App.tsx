@@ -16,7 +16,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <Router basename='/art-work'>
+      <Router>
         <ScrollToTop />
         <Routes>
           <Route path='/' element={<Index />} />
