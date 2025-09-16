@@ -13,23 +13,22 @@ export const ProductListing = ({ title, products }: ProductListingProps) => {
 
   const handleScroll = () => {
     if (!scrollRef.current) return;
-    
+
     const { scrollLeft } = scrollRef.current;
     const cardWidth = 288;
     const gap = 24;
     const itemWidth = cardWidth + gap;
     const totalItems = products.length;
     const sectionWidth = itemWidth * totalItems;
-    
-    const adjustedScrollLeft = scrollLeft - sectionWidth;
-    const currentIndex = Math.round(adjustedScrollLeft / itemWidth);
-    const normalizedIndex = ((currentIndex % totalItems) + totalItems) % totalItems;
+
+    // Calculate current index directly from scrollLeft
+    const currentIndex = Math.round(scrollLeft / itemWidth);
+    const normalizedIndex = Math.min(Math.max(0, currentIndex), totalItems - 1);
     setActiveIndex(normalizedIndex);
-    
-    if (scrollLeft >= sectionWidth * 2) {
-      scrollRef.current.scrollLeft = sectionWidth;
-    } else if (scrollLeft <= 0) {
-      scrollRef.current.scrollLeft = sectionWidth;
+
+    // Only prevent scrolling past the right boundary
+    if (scrollLeft >= sectionWidth - itemWidth) {
+      scrollRef.current.scrollLeft = sectionWidth - itemWidth;
     }
   };
 
@@ -43,7 +42,7 @@ export const ProductListing = ({ title, products }: ProductListingProps) => {
       <div
         ref={scrollRef}
         className='md:hidden overflow-x-auto pb-4 scrollbar-hide'
-        // onScroll={handleScroll}
+        onScroll={handleScroll}
       >
         <div className='flex space-x-6 px-4'>
           {[...products].map((product, index) => (

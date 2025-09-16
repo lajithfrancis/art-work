@@ -4,7 +4,6 @@ const Gallery = () => {
   return (
     <section id='gallery' className='py-20 bg-secondary/30'>
       <div className='text-center mb-16'>
-        ̦
         <h2 className='text-4xl md:text-5xl font-serif font-bold mb-4 elegant-text'>
           Fresh from the Studio
         </h2>
